@@ -1,0 +1,1207 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<!--* Copyright (c) 2024 Dan Beaumont - All Rights Reserved 
+    * Developer: Dan Beaumont -->
+
+<head>
+
+  <title>CHEATSHEET &hyphen; HTML</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="./resources/images/cheatsheet_favicon.jpg">
+
+  <!-- STYLE SHEETS -->
+  <link rel="stylesheet" href="./resources/css/cheatstyle.css">
+
+  <!-- SCRIPTS -->
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <header class="header">
+    <div id="brand">
+      <span class="logo">
+        <a class="logoLink" href="index.html"><span class="highlight">&lt;</span>CHEATSHEET<span class="highlight">&gt;</span></a>
+      </span>
+    </div>
+
+    <nav class="nav-bar">
+      <ul class="nav-menu">
+        <li class="nav-item"><a class="navLink" href="./index.html" class="nav-link">BASIC HTML</a></li>
+        <li class="nav-item"><a class="navLink" href="./css.html" class="nav-link">BASIC CSS</a></li>
+        <li class="nav-item"><a class="navLink" href="./css_advanced.html" class="nav-link">ADVANCED CSS</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main>
+
+    <section id="html" class="markUpSection">
+
+      <h2 class="markUpTitle">INTRODUCTION TO HTML</h2>
+
+      <p>Welcome to <span class="highlight">&lt;</span> CHEATSHEET <span class="highlight">&gt;</span>, my HTML
+        quick&hyphen;ref&hyphen;guide to the basics of HTML &amp; CSS. I hope you find it useful.</p>
+      <p>Lets start with the basics of HTML and its essential tags and structure. This should provide you with enough to
+        write your first web page.</p>
+
+      <!-- ESSENTIALS -->
+
+      <article id="essentials">
+        <h2 class="elementTitle">HTML ESSENTIALS</h2>
+
+        <h3 class="attributeTitle">ESSENTIAL TAGS</h3>
+
+        <table>
+          <thead>
+            <tr>
+              <th>TAG</th>
+              <th>NAME</th>
+              <th>DESCRIPTION</th>
+            </tr>
+          </thead>
+
+          <tbody>
+
+            <tr>
+              <td><code>&lt;DOCTYPE! html&gt;</code></td>
+              <td>Doc Type</td>
+              <td>Defines the page as HTML mark up and must be the first tag in all HTML documents.</td>
+            </tr>
+
+            <tr>
+              <td><code>&lt;html&gt;</code></td>
+              <td>HTML</td>
+              <td>Defines the doument as a web page. All other dags must fall within the HTML tags</td>
+            </tr>
+
+            <tr>
+              <td><code>&lt;head&gt;</code></td>
+              <td>Head</td>
+              <td>Contains none&hyphen;display conent and meta&hyphen;data, including page title, linked stylesheets and
+                javascript functions.</td>
+            </tr>
+
+            <tr>
+              <td><code>&lt;title&gt;</code></td>
+              <td>Title</td>
+              <td>The title tag defines the page title that will appear in at the top of the browser window or in page
+                tabs.</td>
+            </tr>
+
+            <tr>
+              <td><code>&lt;body&gt;</code></td>
+              <td>Body</td>
+              <td>Typically contains all content to be displayed to end users.</td>
+            </tr>
+
+          </tbody>
+        </table>
+
+        <h3 class="attributeTitle">ESSENTIAL TAGS SAMPLE</h3>
+
+        <div class="codeSample">
+          <pre>
+&lt;DOCTYPE! html&gt;
+
+&lt;html&gt;
+
+  &lt;head&gt;
+    &lt;title&gt;Page Title&lt;&sol;title&gt;
+  &lt;&sol;head&gt;
+                          
+  &lt;body&gt;
+            
+    This is where all web page content is placed.
+
+  &lt;&sol;body&gt;
+                          
+&lt;&sol;html&gt;
+          </pre>
+        </div>
+      </article>
+
+      <!-- COMMON TAGS -->
+
+      <article id="essentials">
+        <h2 class="elementTitle">COMMON TAGS</h2>
+
+        <h3 class="attributeTitle">BASIC TAGS</h3>
+
+        <table>
+          <thead>
+            <tr>
+              <th>TAG</th>
+              <th>NAME</th>
+              <th>DESCRIPTION</th>
+            </tr>
+          </thead>
+
+          <tbody>
+
+            <tr>
+              <td><code>&lt;h1&gt; to &lt;h6&gt;</code></td>
+              <td>Headings</td>
+              <td>Defines a heading or title, with h1 beign the largest and h6 the smallest</td>
+            </tr>
+
+            <tr>
+              <td><code>&lt;p&gt;</code></td>
+              <td>Paragraph</td>
+              <td>Denotes a paragraph of text</td>
+            </tr>
+
+            <tr>
+              <td><code>&lt;div&gt;</code></td>
+              <td>Divider</td>
+              <td>None specific section divider, allows for the grouping of elements</td>
+            </tr>
+
+            <tr>
+              <td><code>&lt;img&gt;</code></td>
+              <td>Image</td>
+              <td>Defines the placement of an image, through the src attribute. The img tag is relitivley unique in that
+                it is self closing and doesn't require a <code>&lt;&sol;img&gt;</code> tag</td>
+            </tr>
+
+            <tr>
+              <td><code>&lt;span&gt;</code></td>
+              <td>Span</td>
+              <td>An inline section of text, within other content.</td>
+            </tr>
+
+            <tr>
+              <td><code>&lt;a&gt;</code></td>
+              <td>Anchor</td>
+              <td>The tag used to create hyperlinks, or links, and requires the href &lpar;hyperlink reference&rpar;
+                attirbute</td>
+            </tr>
+
+          </tbody>
+        </table>
+
+        <h3 class="attributeTitle">TEXT FORMATTING TAGS</h3>
+
+        <table>
+          <thead>
+            <tr>
+              <th>TAG</th>
+              <th>NAME</th>
+              <th>DESCRIPTION</th>
+            </tr>
+          </thead>
+
+          <tbody>
+
+            <tr>
+              <td><code>&lt;h1&gt; to &lt;h6&gt;</code></td>
+              <td>Headings</td>
+              <td>Defines a heading or title, with h1 beign the largest and h6 the smallest</td>
+            </tr>
+
+            <tr>
+              <td><code>&lt;p&gt;</code></td>
+              <td>Paragraph</td>
+              <td>Denotes a paragraph of text</td>
+            </tr>
+
+            <tr>
+              <td><code>&lt;b&gt;</code></td>
+              <td>Bold</td>
+              <td>Makes text between the tags appear <b>bold</b></td>
+            </tr>
+
+            <tr>
+              <td><code>&lt;strong&gt;</code></td>
+              <td>Strong</td>
+              <td>Displays as <strong>bold</strong> in most browsers</td>
+            </tr>
+
+            <tr>
+              <td><code>&lt;i&gt;</code></td>
+              <td>Italic</td>
+              <td>Text between these tags will appear <i>italic</i></td>
+            </tr>
+
+            <tr>
+              <td><code>&lt;em&gt;</code></td>
+              <td>Emphasis</td>
+              <td>Much like <code>&lt;i&gt;</code> will make the text between appear italic</td>
+            </tr>
+
+            <tr>
+              <td><code>&lt;u&gt;</code></td>
+              <td>Underline</td>
+              <td><u>Underlines</u> the text between each tag</td>
+            </tr>
+
+
+            <tr>
+              <td><code>&lt;strike&gt;</code></td>
+              <td>Strikethrough</td>
+              <td><strike>Strikes Trhough</strike> the text between each tag</td>
+            </tr>
+
+            <tr>
+              <td><code>&lt;sup&gt;</code></td>
+              <td>Superscript</td>
+              <td>Text between these tags will appear <sup>superscript</sup></td>
+            </tr>
+
+            <tr>
+              <td><code>&lt;sub&gt;</code></td>
+              <td>Subscript</td>
+              <td>Text between these tags will appear <sub>subscript</sub></td>
+            </tr>
+
+            <tr>
+              <td><code>&lt;small&gt;</code></td>
+              <td>Small</td>
+              <td>Will make the contined text <small>smaller</small> than the surrounding content</td>
+            </tr>
+
+            <tr>
+              <td><code>&lt;tt&gt;</code></td>
+              <td>Typewriter Format</td>
+              <td>Formats text as <tt>typewriter</tt> text</td>
+            </tr>
+
+            <tr>
+              <td><code>&lt;blockquote&gt;</code></td>
+              <td>Block Quote</td>
+              <td>Large text block quote</td>
+            </tr>
+
+            <tr>
+              <td><code>&lt;quote&gt;</code></td>
+              <td>Quote</td>
+              <td>Small inline <quote>quote</quote>
+              </td>
+            </tr>
+
+            <tr>
+              <td><code>&lt;code&gt;</code></td>
+              <td>Code Snippet</td>
+              <td>Short code snippet</td>
+            </tr>
+
+            <tr>
+              <td><code>&lt;pre&gt;</code></td>
+              <td>Pre&hyphen;formatted</td>
+              <td>Pre&hyphen;formatted code snippet</td>
+            </tr>
+
+            <tr>
+              <td><code>&lt;br&gt;</code></td>
+              <td>Line Break</td>
+              <td>Creates a line break within paragraph or heading tags</td>
+            </tr>
+
+          </tbody>
+        </table>
+      </article>
+
+      <!-- LINKS -->
+
+      <article id="links">
+        <h2 class="elementTitle">HYPERLINKS</h2>
+
+        <h3 class="attributeTitle">ANCHOR TAGS</h3>
+
+        <table>
+          <thead>
+            <tr>
+              <th>TAG</th>
+              <th>NAME</th>
+              <th>DESCRIPTION</th>
+            </tr>
+          </thead>
+
+          <tbody>
+
+            <tr>
+              <td><code>&lt;a&gt;</code></td>
+              <td>Anchor Tag</td>
+              <td>Defines a clickable link. Anchor tags can be placed around almost all other tags, converting any
+                element of group of elements into a link</td>
+            </tr>
+
+          </tbody>
+        </table>
+
+        <h3 class="attributeTitle">LINK ATTRIBUTES</h3>
+
+        <table>
+          <thead>
+            <tr>
+              <th>ATTRIBUTE</th>
+              <th>NAME</th>
+              <th>DESCRIPTION</th>
+            </tr>
+          </thead>
+
+          <tbody>
+
+            <tr>
+              <td><code>&lt;a href&equals;&quot;...&quot;&gt;</code></td>
+              <td>HRef &lpar;or Hyperlink Reference&rpar;</td>
+              <td>This attribute is required for all anchor tages.<br>The value dictates the location, which when
+                clicked, the user will be directed to. The vaule can be&colon;<br>
+                An external page &hyphen; <code>&quot;https&colon;&sol;&sol;www.google.com&sol;&quot;</code><br>
+                A relative&sol;internal page &hyphen; <code>&quot;.&sol;index.html&sol;&quot;</code><br>
+                A location on a page link using the element id <code>&quot;&num;footer&quot;</code></td>
+            </tr>
+
+            <tr>
+              <td><code>&lt;a name&equals;&quot;...&quot;&gt;</code></td>
+              <td>Link Name</td>
+              <td>Name of the link &lpar;name of anchor or name of bookmark&rpar;</td>
+            </tr>
+
+            <tr>
+              <td><code>&lt;a target&equals;&quot;...&quot;&gt;</code></td>
+              <td>Target Location</td>
+              <td>Defines where a clicked link will open, values include&colon;<code>&quot;_self&quot;</code>,
+                <code>&quot;_blank&quot;</code>, <code>&quot;_top&quot;</code> and <code>&quot;_parent&quot;</code></td>
+            </tr>
+
+            <tr>
+              <td><code>&lt;a href&equals;&quot;url&num;bookmark&quot;&gt;</code></td>
+              <td>Bookmark</td>
+              <td>Link to a bookmark defined by the name attribute</td>
+            </tr>
+
+            <tr>
+              <td><code>&lt;a href&equals;&quot;mailto&colon;email&commat;email.com&quot;&gt;</code></td>
+              <td>Email link</td>
+              <td>Initiate, when clicked, an email through the users email client</td>
+            </tr>
+
+            <tr>
+              <td><code>&lt;a href&equals;&quot;tel&colon;+441234567890&quot;&gt;</code></td>
+              <td>Telephone link</td>
+              <td>Initiate a phone call, depending on users device</td>
+            </tr>
+
+
+          </tbody>
+        </table>
+
+      </article>
+
+      <!-- LISTS -->
+
+      <article id="lists">
+        <h2 class="elementTitle">LISTS</h2>
+
+        <h3 class="attributeTitle">LIST TAGS</h3>
+
+        <table>
+          <thead>
+            <tr>
+              <th>TAG</th>
+              <th>NAME</th>
+              <th>DESCRIPTION</th>
+            </tr>
+          </thead>
+
+          <tbody>
+
+            <tr>
+              <td><code>&lt;ul&gt;</code></td>
+              <td>Unordered List</td>
+              <td>Defines an unordered list, bullet&hyphen;pointed by default</td>
+            </tr>
+
+            <tr>
+              <td><code>&lt;ol&gt;</code></td>
+              <td>Ordered List</td>
+              <td>Defines an ordered list, numbered by default</td>
+            </tr>
+
+            <tr>
+              <td><code>&lt;li&gt;</code></td>
+              <td>List Item</td>
+              <td>Defines a list item &lpar;within an ordered or unordered list&rpar;</td>
+            </tr>
+
+            <tr>
+              <td><code>&lt;dl&gt;</code></td>
+              <td>Definition List</td>
+              <td>Defines a definition item</td>
+            </tr>
+
+            <tr>
+              <td><code>&lt;dt&gt;</code></td>
+              <td>Term</td>
+              <td>A Term of phrase to be defined</td>
+            </tr>
+
+            <tr>
+              <td><code>&lt;dd&gt;</code></td>
+              <td>Detailed Definition</td>
+              <td>Defines a detailed definition list item</td>
+            </tr>
+
+          </tbody>
+        </table>
+
+        <h3 class="attributeTitle">LIST ATTRIBUTES</h3>
+
+        <table>
+          <thead>
+            <tr>
+              <th>ATTRIBUTE</th>
+              <th>NAME</th>
+              <th>DESCRIPTION</th>
+            </tr>
+          </thead>
+
+          <tbody>
+
+            <tr>
+              <td><code>&lt;ol type=&quot; &quot;&gt;</code></td>
+              <td>Ordered List Type</td>
+              <td>Sets the list type with values <code>A</code>, <code>a</code>, <code>I</code>, <code>i</code> or
+                <code>1</code>
+              </td>
+            </tr>
+
+            <tr>
+              <td><code>&lt;ol start=&quot; &quot;&gt;</code></td>
+              <td>Ordered List Starting Value</td>
+              <td>Allows you do dictate the starting value for the list</td>
+            </tr>
+
+            <tr>
+              <td><code>&lt;ul type=&quot; &quot;&gt;</code></td>
+              <td>Unordered List Type</td>
+              <td>Sets the unordered list type with values <code>disc</code>, <code>circle</code> or <code>square</code>
+              </td>
+            </tr>
+
+            <tr>
+              <td><code>&lt;li value=&quot; &quot;&gt;</code></td>
+              <td>List Item Value</td>
+              <td>Changes current and subsequent items</td>
+            </tr>
+
+            <tr>
+              <td><code>&lt;li type=&quot; &quot;&gt;</code></td>
+              <td>List Item Type</td>
+              <td>Changes ONLY the current item</td>
+            </tr>
+
+          </tbody>
+        </table>
+
+      </article>
+
+      <!-- IMAGES -->
+
+      <article id="links">
+        <h2 class="elementTitle">IMAGES</h2>
+
+        <h3 class="attributeTitle">IMAGE TAG</h3>
+
+        <table>
+          <thead>
+            <tr>
+              <th>TAG</th>
+              <th>NAME</th>
+              <th>DESCRIPTION</th>
+            </tr>
+          </thead>
+
+          <tbody>
+
+            <tr>
+              <td><code>&lt;img&gt;</code></td>
+              <td>Image</td>
+              <td>Defines the placement of an image, through the src attribute. The img tag is relitivley unique in that
+                it is self closing and doesn't require a <code>&lt;&sol;img&gt;</code> tag</td>
+            </tr>
+
+          </tbody>
+        </table>
+
+        <h3 class="attributeTitle">IMAGE ATTRIBUTES</h3>
+
+        <table>
+          <thead>
+            <tr>
+              <th>ATTRIBUTE</th>
+              <th>NAME</th>
+              <th>DESCRIPTION</th>
+            </tr>
+          </thead>
+
+          <tbody>
+
+            <tr>
+              <td><code>&lt;img src&equals;&quot;...&quot;&gt;</code></td>
+              <td>URL or File Path and Name</td>
+              <td>This attribute is required for all Image tages.</td>
+            </tr>
+
+            <tr>
+              <td><code>&lt;img alt&equals;&quot;...&quot;&gt;</code></td>
+              <td>Alternative Name</td>
+              <td>This is required for all image tags and provides altnerative text for text only browsers</td>
+            </tr>
+
+            <tr>
+              <td><code>&lt;img align&equals;&quot;...&quot;&gt;</code></td>
+              <td>Align</td>
+              <td>Aligns image within surronding text <a
+                    href="#note">&lpar;&ast;&rpar;</a></td>
+            </tr>
+
+            <tr>
+              <td><code>&lt;img width&equals;&quot;...&quot;&gt;</code></td>
+              <td>Width</td>
+              <td>Defines the image width in pixels or &percnt; <a
+                    href="#note">&lpar;&ast;&rpar;</a></td>
+            </tr>
+
+            <tr>
+              <td><code>&lt;img height&equals;&quot;...&quot;&gt;</code></td>
+              <td>Height</td>
+              <td>Defines the image height in pixels or &percnt; <a
+                    href="#note">&lpar;&ast;&rpar;</a></td>
+            </tr>
+
+            <tr>
+              <td><code>&lt;img border&equals;&quot;...&quot;&gt;</code></td>
+              <td>Border</td>
+              <td>Defines border thicknes in pixels <a href="#note">&lpar;&ast;&rpar;</a>
+              </td>
+            </tr>
+
+            <tr>
+              <td><code>&lt;img vspace&equals;&quot;...&quot;&gt;</code></td>
+              <td>Vertical Space</td>
+              <td>Defines the space above and below the image in pixels <a
+                    href="#note">&lpar;&ast;&rpar;</a></td>
+            </tr>
+
+            <tr>
+              <td><code>&lt;img hspace&equals;&quot;...&quot;&gt;</code></td>
+              <td>Horizonal Space</td>
+              <td>Defines the space left and fight of the image in pixels <a
+                    href="#note">&lpar;&ast;&rpar;</a></td>
+            </tr>
+
+          </tbody>
+        </table>
+
+      </article>
+
+      <!-- SEMANTIC MARK-UP -->
+
+      <article id="semantics">
+        <h2 class="elementTitle">SEMANTIC MARKUP</h2>
+
+        <h3 class="attributeTitle">SEMANTIC TAGS</h3>
+
+        <table>
+          <thead>
+            <tr>
+              <th>TAG</th>
+              <th>NAME</th>
+              <th>DESCRIPTION</th>
+            </tr>
+          </thead>
+
+          <tbody>
+
+            <tr>
+              <td><code>&lt;head&gt;</code></td>
+              <td>Head</td>
+              <td>Contains none&hyphen;display conent and meta&hyphen;data, including page title, linked stylesheets and
+                javascript functions.</td>
+            </tr>
+
+            <tr>
+              <td><code>&lt;body&gt;</code></td>
+              <td>Body</td>
+              <td>Typically contains all content to be displayed to end users.</td>
+            </tr>
+
+            <tr>
+              <td><code>&lt;header&gt;</code></td>
+              <td>Page Header</td>
+              <td>Defines the header section of the webpage, commonly contains page title or logo and&sol;or navigation
+                links</td>
+            </tr>
+
+            <tr>
+              <td><code>&lt;section&gt;</code></td>
+              <td>Section</td>
+              <td>Defines a section within a page and should contain a heading title</td>
+            </tr>
+
+            <tr>
+              <td><code>&lt;article&gt;</code></td>
+              <td>Article</td>
+              <td>Defines an article within a section and should contain a heading title. Helps to group related
+                elements.</td>
+            </tr>
+
+            <tr>
+              <td><code>&lt;aside&gt;</code></td>
+              <td>Aside</td>
+              <td>Defines a side note to surrounding elements&sol;content</td>
+            </tr>
+
+            <tr>
+              <td><code>&lt;figure&gt;</code></td>
+              <td>Figure</td>
+              <td>Container for stand&hyphen;alone images and videos</td>
+            </tr>
+
+            <tr>
+              <td><code>&lt;blockquote&gt;</code></td>
+              <td>Long Quote</td>
+              <td>Defines a long quote.</td>
+            </tr>
+
+            <tr>
+              <td><code>&lt;footer&gt;</code></td>
+              <td>Footer</td>
+              <td>Defines the page footer, the final element to a page and commonly contains copyright info, contact
+                details and links</td>
+            </tr>
+
+          </tbody>
+        </table>
+
+        <h3 class="attributeTitle">SEMANTIC MARKUP SAMPLE</h3>
+
+        <div class="codeSample">
+          <pre>
+&lt;html lang="en"&gt;
+
+  &lt;head&gt;
+    &lt;title&gt;Page Title&lt;&sol;title&gt;
+  &lt;&sol;head&gt;
+                          
+  &lt;body&gt;
+                          
+    &lt;header&gt;
+      Logo, title, navigation
+
+      &lt;nav&gt;
+        Primary and secondary menus but ever nest navs
+      &lt;&sol;nav&gt;
+              
+    &lt;&sol;header&gt;
+               
+    &lt;section&gt;
+      Related grouping of semantic meaning
+                          
+      &lt;article&gt;
+        Self-contained content
+      &lt;&sol;article&gt;
+                          
+      &lt;article&gt;
+        Would still make sense if all other content removed
+
+        &lt;aside&gt;
+
+          &lt;blockquote&gt;
+            Related to main but outside the main flow
+          &lt;&sol;blockquote&gt;
+
+        &lt;&sol;aside&gt; 
+
+      &lt;&sol;article&gt;
+      
+    &lt;&sol;section&gt;
+                          
+    &lt;footer&gt;
+      Copyright, contact, links
+    &lt;&sol;footer&gt;
+                          
+  &lt;&sol;body&gt;
+                          
+&lt;&sol;html&gt;
+          </pre>
+        </div>
+      </article>
+
+      <!-- TABLES -->
+
+      <article id="tables">
+        <h2 class="elementTitle">TABLES</h2>
+
+        <h3 class="attributeTitle">TABLE TAGS</h3>
+
+        <table>
+          <thead>
+            <tr>
+              <th>TAG</th>
+              <th>NAME</th>
+              <th>DESCRIPTION</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td><code>&lt;table&gt;</code></td>
+              <td>Table</td>
+              <td>The wrapper element for all HTML tables.</td>
+            </tr>
+
+            <tr>
+              <td><code>&lt;thead&gt;</code></td>
+              <td>Table Head</td>
+              <td>The set of rows defining the column headers in a table.</td>
+            </tr>
+
+            <tr>
+              <td><code>&lt;tbody&gt;</code></td>
+              <td>Table Body</td>
+              <td>The set of rows containing actual table data.</td>
+            </tr>
+
+            <tr>
+              <td><code>&lt;th&gt;</code></td>
+              <td>Table Heading</td>
+              <td>Sets the title for each column of data.</td>
+            </tr>
+
+            <tr>
+              <td><code>&lt;tr&gt;</code></td>
+              <td>Table Row</td>
+              <td>The table row container.</td>
+            </tr>
+
+            <tr>
+              <td><code>&lt;td&gt;</code></td>
+              <td>Table Data</td>
+              <td>The table data container.</td>
+            </tr>
+
+            <tr>
+              <td><code>&lt;tfoot&gt;</code></td>
+              <td>Table Foot</td>
+              <td>The set of rows defining the footer in a table.</td>
+            </tr>
+
+          </tbody>
+        </table>
+
+        <h3 class="attributeTitle">TABLE ATTRIBUTES</h3>
+
+        <table>
+          <thead>
+            <tr>
+              <th>ATTRIBUTE</th>
+              <th>NAME</th>
+              <th>DESCRIPTION</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td><code>colspan</code></td>
+              <td>Column Span</td>
+              <td>Defines how many columns a td element should span.</td>
+            </tr>
+
+            <tr>
+              <td><code>rowspan</code></td>
+              <td>Row Span</td>
+              <td>The set of rows defining the column headers in a table.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3 class="attributeTitle">TABLE SAMPLE</h3>
+
+        <div class="codeSample">
+          <pre>
+&lt;table&gt;
+
+  &lt;caption&gt;Table Caption&lt;/caption&gt;
+                  
+  &lt;colgroup&gt;
+    &lt;col&gt;
+    &lt;col span="2" class="left-two"&gt;
+    &lt;col span="2" class="right-two"&gt;
+  &lt;/colgroup&gt;
+                  
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th colspan="2"&gt;Left Two&lt;/th&gt;
+      &lt;th colspan="2"&gt;Right Two&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+                  
+  &lt;tbody&gt;
+    &lt;tr&gt;
+        &lt;th rowspan="2"&gt;Top Two&lt;/th&gt;
+        &lt;td&gt;Body 1,1&lt;/td&gt;
+        &lt;td&gt;Body 1,2&lt;/td&gt;
+        &lt;td&gt;Body 1,3&lt;/td&gt;
+        &lt;td&gt;Body 1,4&lt;/td&gt;
+    &lt;/tr&gt;
+                     
+    &lt;tr&gt;
+        &lt;td&gt;Body 2,1&lt;/td&gt;
+        &lt;td&gt;Body 2,2&lt;/td&gt;
+        &lt;td&gt;Body 2,3&lt;/td&gt;
+        &lt;td&gt;Body 2,4&lt;/td&gt;
+    &lt;/tr&gt;
+      
+      &lt;tr&gt;
+        &lt;th rowspan="2"&gt;Bottom Two&lt;/th&gt;
+        &lt;td&gt;Body 3,1&lt;/td&gt;
+        &lt;td&gt;Body 3,2&lt;/td&gt;
+        &lt;td&gt;Body 3,3&lt;/td&gt;
+        &lt;td&gt;Body 3,4&lt;/td&gt;
+      &lt;/tr&gt;
+      
+      &lt;tr&gt;
+        &lt;td&gt;Body 4,1&lt;/td&gt;
+        &lt;td&gt;Body 4,2&lt;/td&gt;
+        &lt;td&gt;Body 4,3&lt;/td&gt;
+        &lt;td&gt;Body 4,4&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+                  
+    &lt;tfoot&gt;
+      &lt;tr&gt;
+        &lt;th&gt;&lt;/th&gt;
+        &lt;td&gt;Footer 1&lt;/td&gt;
+        &lt;td&gt;Footer 2&lt;/td&gt;
+        &lt;td&gt;Footer 3&lt;/td&gt;
+        &lt;td&gt;Footer 4&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tfoot&gt;
+                  
+&lt;/table&gt;
+                </pre>
+        </div>
+      </article>
+
+      <!-- FORMS -->
+
+      <article>
+
+        <h2 class="elementTitle">FORMS</h2>
+
+        <h3 class="attributeTitle">FORM TAGS</h3>
+
+        <table>
+          <thead>
+            <tr>
+              <th>TAG</th>
+              <th>NAME</th>
+              <th>DESCRIPTION</th>
+            </tr>
+          </thead>
+
+          <tbody>
+
+            <tr>
+              <td><code>&lt;form&gt;</code></td>
+              <td>Form</td>
+              <td>The wrapper element for all HTML forms.</td>
+            </tr>
+
+            <tr>
+              <td><code>&lt;fieldset&gt;</code></td>
+              <td>Field Set</td>
+              <td>Descripes the fieldset</td>
+            </tr>
+
+            <tr>
+              <td><code>&lt;input&gt;</code></td>
+              <td>Input</td>
+              <td>Indicates a user input requirement, defined by <code>&lt;type&gt; attribute</code></td>
+            </tr>
+
+            <tr>
+              <td><code>&lt;label&gt;</code></td>
+              <td>Label</td>
+              <td>Provides users with a label for the input required.</td>
+            </tr>
+
+          </tbody>
+        </table>
+
+        <h3 class="attributeTitle">FORM SAMPLE</h3>
+
+        <div class="codeSample">
+          <pre>
+&lt;form&gt;
+
+  &lt;fieldset&gt;
+    &lt;legend&gt;Describes fieldset&lt;&sol;legend&gt;
+                      
+    &lt;p&gt;
+      &lt;input type="radio" name="vertical" id="option1" value="top"&gt;
+      &lt;label for="option1"&gt;Top&lt;&sol;label&gt;
+    &lt;&sol;p&gt;
+                      
+    &lt;p&gt;
+      &lt;label for="option2"&gt;
+      &lt;input type="radio" name="vertical" id="option2" value="bottom"&gt; Bottom
+      &lt;&sol;label&gt;
+    &lt;&sol;p&gt;
+                      
+    &lt;p&gt;
+      &lt;label for="horizontal"&gt;
+        Horizontal:
+        &lt;&sol;label&gt;
+        &lt;select id="horizontal" name="horizontal"&gt;
+          &lt;option value="left"&gt;Left&lt;&sol;option&gt;
+          &lt;option value="middle"&gt;Middle&lt;&sol;option&gt;
+          &lt;option value="right"&gt;Right&lt;&sol;option&gt;
+        &lt;&sol;select&gt;
+    &lt;&sol;p&gt;
+                      
+  &lt;&sol;fieldset&gt;
+                      
+ &lt;&sol;form&gt;
+                    </pre>
+        </div>
+      </article>
+
+      <!-- ENTITIES -->
+
+      <article id="entities">
+        <h2 class="elementTitle">ENTITIES &lpar;SPECIAL CHARACTERS&rpar;</h2>
+
+        <h3 class="attributeTitle">ANCHOR TAGS</h3>
+
+        <table>
+          <thead>
+            <tr>
+              <th>ENTITIY</th>
+              <th>CHARACTER</th>
+              <th>DESCRIPTION</th>
+            </tr>
+          </thead>
+
+          <tbody>
+
+            <tr>
+              <td><code>&amp;lt&semi;</code></td>
+              <td>&lt;</td>
+              <td>Less Than symbol</td>
+            </tr>
+
+            <tr>
+              <td><code>&amp;gt&semi;</code></td>
+              <td>&gt;</td>
+              <td>Greater Than symbol</td>
+            </tr>
+
+            <tr>
+              <td><code>&amp;amp&semi;</code></td>
+              <td>&amp;</td>
+              <td>Ampersand or &apos;and&apos; symbol</td>
+            </tr>
+
+            <tr>
+              <td><code>&amp;quot&semi;</code></td>
+              <td>&quot;</td>
+              <td>Double quotation marks</td>
+            </tr>
+
+            <tr>
+              <td><code>&amp;apos&semi;</code></td>
+              <td>&apos;</td>
+              <td>Apostrophe</td>
+            </tr>
+
+            <tr>
+              <td><code>&amp;sol&semi;</code></td>
+              <td>&sol;</td>
+              <td>Forward Slash</td>
+            </tr>
+
+            <tr>
+              <td><code>&amp;bsol&semi;</code></td>
+              <td>&bsol;</td>
+              <td>Backward Slash</td>
+            </tr>
+
+            <tr>
+              <td><code>&amp;semi&semi;</code></td>
+              <td>&semi;</td>
+              <td>Semicolon</td>
+            </tr>
+
+            <tr>
+              <td><code>&amp;colon&semi;</code></td>
+              <td>&colon;</td>
+              <td>Colon</td>
+            </tr>
+
+            <tr>
+              <td><code>&amp;num&semi;</code></td>
+              <td>&num;</td>
+              <td>Number Symbol</td>
+            </tr>
+
+            <tr>
+              <td><code>&amp;deg&semi;</code></td>
+              <td>&deg;</td>
+              <td>Degree Symbol</td>
+            </tr>
+
+            <tr>
+              <td><code>&amp;hyphen&semi;</code></td>
+              <td>&hyphen;</td>
+              <td>Hyphen</td>
+            </tr>
+
+            <tr>
+              <td><code>&amp;lpar&semi; &amp;rpar&semi;</code></td>
+              <td>&lpar; &rpar;</td>
+              <td>Left and Right Parentheses &lpar;Brackets&rpar;</td>
+            </tr>
+
+            <tr>
+              <td><code>&amp;commat&semi;</code></td>
+              <td>&commat;</td>
+              <td>At Symbol</td>
+            </tr>
+
+            <tr>
+              <td><code>&amp;pound&semi;</code></td>
+              <td>&pound;</td>
+              <td>Pounds Sterling &lpar;UK Currency&rpar; Symbol</td>
+            </tr>
+
+            <tr>
+              <td><code>&amp;dollar&semi;</code></td>
+              <td>&dollar;</td>
+              <td>Dollor &lpar;USA Currency&rpar; Symbol</td>
+            </tr>
+
+            <tr>
+              <td><code>&amp;euro&semi;</code></td>
+              <td>&euro;</td>
+              <td>Euro &lpar;European Currency&rpar; Symbol</td>
+            </tr>
+
+            <tr>
+              <td><code>&amp;copy&semi;</code></td>
+              <td>&copy;</td>
+              <td>Copyright Symbol</td>
+            </tr>
+
+            <tr>
+              <td><code>&amp;reg&semi;</code></td>
+              <td>&reg;</td>
+              <td>Registered Trademark Symbol</td>
+            </tr>
+
+            <tr>
+              <td><code>&amp;trade&semi;</code></td>
+              <td>&trade;</td>
+              <td>Trademark Symbol</td>
+            </tr>
+
+            <tr>
+              <td><code>&amp;nbsp&semi;</code></td>
+              <td>&hyphen;</td>
+              <td>Non&hyphen;braking Space</td>
+            </tr>
+
+
+          </tbody>
+        </table>
+
+        <p class="caption">A full list of special characters and their HTML entities can be <a href="https://html.spec.whatwg.org/multipage/named-characters.html#named-character-references" target="_blank">found here</a>.</p>
+
+      </article>
+
+      <!-- ESSENTIALS -->
+
+      <article id="misc">
+        <h2 class="elementTitle">MISCELLANEOUS</h2>
+
+        <h3 class="attributeTitle">MORE TAGS</h3>
+
+        <table>
+          <thead>
+            <tr>
+              <th>TAG</th>
+              <th>NAME</th>
+              <th>DESCRIPTION</th>
+            </tr>
+          </thead>
+
+          <tbody>
+
+            <tr>
+              <td><code>&lt;!&hyphen;&hyphen; ... &hyphen;&hyphen;&gt;</code></td>
+              <td>Comment</td>
+              <td>Defines a comment in your document. These are not visible elements within the web page but comments to yourself and other developers</td>
+            </tr>
+
+            <tr>
+              <td><code>&lt;meta&gt;</code></td>
+              <td>META</td>
+              <td>Metadata data is infromation about your page. They always go within the <code>&lt;head&gt;</code> element of your document</td>
+            </tr>
+
+            <tr>
+              <td><code>&lt;link&gt;</code></td>
+              <td>Link</td>
+              <td>The link tag is always placed within the <code>&lt;head&gt;</code> element and links stylesheets &lpar;CSS&rpar;, functions &lpar;JavaScript&rpar; and other documents to your page</td>
+            </tr>
+
+            <tr>
+              <td><code>&lt;title&gt;</code></td>
+              <td>Title</td>
+              <td>The title tag defines the page title that will appear in at the top of the browser window or in page
+                tabs.</td>
+            </tr>
+
+            <tr>
+              <td><code>&lt;body&gt;</code></td>
+              <td>Body</td>
+              <td>Typically contains all content to be displayed to end users.</td>
+            </tr>
+
+          </tbody>
+        </table>
+      </article>
+
+    </section>
+
+    <p id="note"><br><span class="highlight">&ast; Please note&colon;</span> Whilst these tags&sol;attributes will still
+      work, it is now best practice to set these attributes via CSS.</p>
+
+
+  </main>
+
+
+  <footer>
+    <div id="aboutMe"><h5><a href="https://www.linkedin.com/in/danbeaumont/" target="_blank">By Dan Beaumont</a></h5></div>
+    <div id="copywright"><h5>&copy; CHEATSHEET 2024</h5></div>
+    <div id="contactMe"><h5><a href="mailto:beaumont.dan@gmail.com" target="_blank">Contact Me</a></h5></div>
+  </footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<!--* Copyright (c) 2024 Dan Beaumont - All Rights Reserved 
+    * Developer: Dan Beaumont -->
+
+<head>
+
+  <title>CHEATSHEET &hyphen; CSS</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="./resources/images/cheatsheet_favicon.jpg">
+
+  <!-- STYLE SHEETS -->
+  <link rel="stylesheet" href="./resources/css/cheatstyle.css">
+
+  <!-- SCRIPTS -->
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <header class="header">
+    <div id="brand">
+      <span class="logo">
+        <a class="logoLink" href="index.html"><span class="highlight">&lt;</span>CHEATSHEET<span class="highlight">&gt;</span></a>
+      </span>
+    </div>
+
+    <nav class="nav-bar">
+      <ul class="nav-menu">
+        <li class="nav-item"><a class="navLink" href="./index.html" class="nav-link">BASIC HTML</a></li>
+        <li class="nav-item"><a class="navLink" href="./css.html" class="nav-link">BASIC CSS</a></li>
+        <li class="nav-item"><a class="navLink" href="./css_advanced.html" class="nav-link">ADVANCED CSS</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main>
+
+    <section id="html" class="markUpSection">
+
+      <h2 class="markUpTitle">INTRODUCTION TO CSS</h2>
+
+      <p>Welcome to <span class="highlight">&lt;</span> CHEATSHEET <span class="highlight">&gt;</span>, for my CSS
+        quick&hyphen;ref&hyphen;guide to the basics of Cascating Stylesheets &lpar;CSS&rpar;. Happy coding!</p>
+
+      <!-- USING STYLES -->
+
+      <article id="usingStyles">
+        <h2 class="elementTitle">USING STYLES</h2>
+
+        <h3 class="attributeTitle">STYLE TYPES</h3>
+        
+        <table>
+          <tbody>
+
+            <thead>
+              <tr>
+                <th colspan="2">There are three options available to style your HTML cosuments&colon;</th>
+              </tr>
+            </thead>
+
+            <tr>
+              <td>Inline Style</td>
+              <td>Inline styles are placed directly into the HTML tag being styled.<br>
+                They override all other styles but are specific to the individual element and as such are not reusable.</td>
+            </tr>
+
+            <tr>
+              <td>Internal Stylesheet</td>
+              <td>Placed within the <code>&lt;head&gt;</code> tags of your document, they orverrid external stylesheets<br>
+                but are only attributed to the current HTML document.</td>
+            </tr>
+
+            <tr>
+              <td>External Stylesheets</td>
+              <td>Widley accepted as the best practice, extneral stylesheets allow styling rules to be used throughout an<br>
+              entire website and allow updates and changes to be made once and carried across all pages.</td>
+            </tr>
+
+            <tr>
+              <td colspan="2">You can utilies any one or a commbination of all 3 depending on your requirements.</th>
+            </tr>
+
+          </tbody>
+        </table>
+
+        <h3 class="attributeTitle">INLINE STYLE</h3>
+
+        <div class="codeSample">
+
+          <p class="left">Inline styles are placed into the element tag using the <code>style=&quot; &quot;</code> attribute.<br>
+            Each CSS attribute&sol;value must be punctuated with the &semi; semi colon.</p>
+
+          <pre>
+            
+&lt;p style=&quot;font&hyphen;family&colon; Helvetica&semi; color&colon; red&semi;&quot;&gt;Your paragraph text here&lt;&sol;p&gt;
+          </pre>
+
+        </div>
+
+        <h3 class="attributeTitle">INTERNAL STYLESHEET</h3>
+
+        <div class="codeSample">
+
+          <p class="left">Internal Stylesheets are placed within the <code>&lt;head&gt;</code> tags using the <code>&lt;style type=&quot;text&sol;css&quot;&gt;</code> tag and attribute.<br>
+          Each CSS selector must be followed by opening and clossing curly brackets &lcub;&rcub;, with <code>attribute&colon; value&semi;</code> placed within.</p>
+
+          <pre>
+            
+&lt;head&gt;
+
+  &lt;style type=&quot;text&sol;css&quot;&gt;
+
+    h1 &lcub;
+      font&hyphen;family&colon; Helvetica&semi;
+      color&colon; red&semi;
+    &rcub;
+
+  &lt;&sol;style&gt;
+
+&lt;&sol;head&gt;
+          </pre>
+
+        </div>
+
+        <h3 class="attributeTitle">EXTERNAL STYLESHEET</h3>
+
+        <div class="codeSample">
+
+          <p class="left">External stylesheets are independent text documents saved with the <code>.css</code> file extension. These are structured&sol;formatted in the same way as the internal stylesheet.
+          These are then linked to your HTML documents using the <code>&lt;link&gt;</code> tag, placed within the <code>&lt;head&gt;</code> element.</p>
+
+          <pre>
+            
+&lt;head&gt;
+
+  &lt;link rel=&quot;stylesheet&quot; type=&quot;text&sol;css&quot; href=&quot;style.css&quot; title=&quot;style&quot;&gt;
+
+&lt;&sol;head&gt;
+          </pre>
+
+        </div>
+
+      </article>
+
+ <!-- LAYOUT -->
+
+ <article id="layout">
+  <h2 class="elementTitle">CSS LAYOUT</h2>
+
+  <h3 class="attributeTitle">SIZE AND POSITION</h3>
+  
+  <table>
+    <tbody>
+
+      <thead>
+        <tr>
+          <th>ATTRIBUTE &colon; VALUE&semi;</th>
+          <th>DESCRIPTION</th>
+        </tr>
+      </thead>
+
+      <tr>
+        <td><code>width&colon; 400px&semi;</code></td>
+        <td>Defines the width of an element &hyphen; e.g. 100px, 50&percnt;, 50em</td>
+      </tr>
+
+      <tr>
+        <td><code>height&colon; 200px&semi;</code></td>
+        <td>Defines the height of an element &hyphen; e.g. 50px, 25&percnt;, 20em</td>
+      </tr>
+
+      <tr>
+        <td><code>margin&colon; 20px&semi;</code></td>
+        <td>Defines the margin, or space around&sol;distance from other elements, for all sides of an element</td>
+      </tr>
+
+      <tr>
+        <td><code>margin&hyphen;top&colon; 10px&semi;</code></td>
+        <td>Defines only the top margin, the same works for <code>&hyphen;right</code>, <code>&hyphen;bottom</code> and <code>&hyphen;left</code></td>
+      </tr>
+
+      <tr>
+        <td><code>padding&colon; 20px&semi;</code></td>
+        <td>Sets the distance between the element content and its border</td>
+      </tr>
+
+      <tr>
+        <td><code>padding&hyphen;top&colon; 20px&semi;</code></td>
+        <td>Sets the TOP distance between the element content and its border, the same works for <code>&hyphen;right</code>, <code>&hyphen;bottom</code> and <code>&hyphen;left</code></td>
+      </tr>
+
+    </tbody>
+  </table>
+</article>
+
+ <!-- COLOURS and BORDERS -->
+
+ <article id="colors">
+  <h2 class="elementTitle">COLORS &amp; BORDERS</h2>
+
+  <h3 class="attributeTitle">SETTING COLORS</h3>
+  
+  <table>
+    <tbody>
+
+      <thead>
+        <tr>
+          <th>ATTRIBUTE &colon; VALUE&semi;</th>
+          <th>DESCRIPTION</th>
+        </tr>
+      </thead>
+
+      <tr>
+        <td><code>color&colon; red&semi;</code></td>
+        <td>Element &lpar;usually text&rpar; color.</td>
+      </tr>
+
+      <tr>
+        <td><code>background&hyphen;color&colon; blue&semi;</code></td>
+        <td>Background color of an element or container</td>
+      </tr>
+
+      <tr>
+        <td><code>background&hyphen;image&colon; url&lpar;image.jpg&rpar;&semi;</code></td>
+        <td>Sets the point size of your text, <code>12pt</code>, <code>20px</code>, <code>2em</code></td>
+      </tr>
+
+      <tr>
+        <td><code>border&hyphen;color&colon; green&semi;</code></td>
+        <td>Sets the border color for an element</td>
+      </tr>
+
+      <tr>
+        <td><code>border&colon; 1px solid yellow&semi;</code></td>
+        <td>Border shorthand &hyphen; sets width, style and color.</td>
+      </tr>
+
+    </tbody>
+  </table>
+
+  <h3 class="attributeTitle">COLOR TYPES</h3>
+
+  <table>
+    <tbody>
+
+      <thead>
+        <tr>
+          <th colspan="3">There are several options available when setting CSS colors&colon;</th>
+        </tr>
+      </thead>
+
+      <tr>
+        <td><code>color&colon; red&semi;</code></td>
+        <td>Name &sol; Keyword</td>
+        <td>There are over 150 named colors, including red, blue, yellow, green, black and white. You can find a <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/named-color" target="_blank">full list here</a>.</td>
+      </tr>
+
+      <tr>
+        <td><code>color&colon; &num;ffffff</code></td>
+        <td>Hex &lpar;Hexadecimal&rpar;</td>
+        <td>Hex colors are specified with: &num;RRGGBB, where the RR &lpar;red&rpar;, GG &lpar;green&rpar; and BB &lpar;blue&rpar; integers specify the components.</td>
+      </tr>
+
+      <tr>
+        <td><code>color&colon; rgb&lpar;255, 0, 0&rpar;&semi;</code></td>
+        <td>RGB</td>
+        <td>Each parameter &lpar;red, green, and blue&rpar; defines the intensity of the color between 0 and 255</td>
+      </tr>
+
+      <tr>
+        <td><code>color&colon; rgba&lpar;255, 0, 0, 0.5&rpar;&semi;</code></td>
+        <td>RGBA</td>
+        <td>RGBA color values are an extension of RGB color values with an alpha channel &hyphen; which specifies the opacity for a color.<br>
+          The alpha parameter is a number between 0.0 &lpar;fully transparent&rpar; and 1.0 &lpar;not transparent at all&rpar;.</td>
+      </tr>
+
+      <tr>
+        <td><code>color&colon; hsl&lpar;0, 100&percnt;, 50&percnt;&rpar;&semi;</code></td>
+        <td>HSL</td>
+        <td>Hue, saturation, and lightness&colon;<br>
+        Hue is a degree on the color wheel from 0 to 360. 0 is red, 120 is green, and 240 is blue.<br>
+        Saturation is a percentage value. 0&percnt; means a shade of gray, and 100&percnt; is the full color.<br>          
+        Lightness is also a percentage. 0&percnt; is black, 50&percnt; is neither light or dark, 100&percnt; is white</td>
+      </tr>
+
+      <tr>
+        <td><code>color&colon; hsl&lpar;0, 100&percnt;, 50&percnt;, 0.5&rpar;&semi;</code></td>
+        <td>HSLA</td>
+        <td>Like with RGBA, the A value in HSLA is the Alpha channel which specifies the opacity for a color.<br>
+          The alpha parameter is a number between 0.0 &lpar;fully transparent&rpar; and 1.0 &lpar;not transparent at all&rpar;.</td>
+      </tr>
+
+    </tbody>
+  </table>
+
+</article>
+
+
+ <!-- TEXT STYLING -->
+
+ <article id="fonts">
+  <h2 class="elementTitle">TEXT STYLING</h2>
+
+  <h3 class="attributeTitle">TYPEFACES &amp; FONTS</h3>
+  
+  <table>
+    <tbody>
+
+      <thead>
+        <tr>
+          <th>ATTRIBUTE &colon; VALUE&semi;</th>
+          <th>DESCRIPTION</th>
+        </tr>
+      </thead>
+
+      <tr>
+        <td><code>font&hyphen;family&colon; Helvetica, &apos;Sans Serif&apos;&semi;</code></td>
+        <td>Typeface selection. It is pest proctice to privde a &apos;font&hyphen;stack&apos;, including similar alternative fonts should your preferred font be unavailable.</td>
+      </tr>
+
+      <tr>
+        <td><code>text&hyphen;align&colon; left&semi;</code></td>
+        <td>Horizonal text alignment. <code>left</code>, <code>center</code>, <code>right</code></td>
+      </tr>
+
+      <tr>
+        <td><code>font&hyphen;size&colon; 15px&semi;</code></td>
+        <td>Sets the point size of your text, <code>12pt</code>, <code>20px</code>, <code>2em</code></td>
+      </tr>
+
+      <tr>
+        <td><code>font&hyphen;weight&colon; 400&semi;</code></td>
+        <td>Selects the font weight &lpar;boldness&rpar;, typically between 100 and 1000 or through keywords light, normal &lpar;400&rpar; and bold.</td>
+      </tr>
+
+      <tr>
+        <td><code>text&hyphen;decoration&colon; underline&semi;</code></td>
+        <td>Adds&sol;removes text&hyphen;decorations &hyphen; <code>none</code>, <code>underline</code>, <code>line&hyphen;through</code>.</td>
+      </tr>
+
+    </tbody>
+  </table>
+</article>
+
+ <!-- LISTS -->
+
+ <article id="lists">
+  <h2 class="elementTitle">LIST STYLING</h2>
+  
+  <table>
+    <tbody>
+
+      <thead>
+        <tr>
+          <th>ATTRIBUTE &colon; VALUE&semi;</th>
+          <th>DESCRIPTION</th>
+        </tr>
+      </thead>
+
+      <tr>
+        <td><code>list&hyphen;style&colon; none&semi;</code></td>
+        <td>Clears the existing and default type sets, bulletpoints and numbers</td>
+      </tr>
+
+    </tbody>
+  </table>
+</article>
+      
+
+    </section>
+
+    <p id="note"><br><span class="highlight">&ast; Please note&colon;</span> Whilst these tags&sol;attributes will still
+      work, it is now best practice to set these attributes via CSS.</p>
+
+
+  </main>
+
+
+  <footer>
+    <div id="aboutMe"><h5><a href="https://www.linkedin.com/in/danbeaumont/" target="_blank">By Dan Beaumont</a></h5></div>
+    <div id="copywright"><h5>&copy; CHEATSHEET 2024</h5></div>
+    <div id="contactMe"><h5><a href="mailto:beaumont.dan@gmail.com" target="_blank">Contact Me</a></h5></div>
+  </footer>
+
+
+</body>
+
+</html>
