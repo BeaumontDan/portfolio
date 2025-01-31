@@ -45,5 +45,3 @@ developers can understand what they can and cannot do
 
 [codecademy]: https://www.codecademy.com/
 [course]: https://www.codecademy.com/learn/paths/full-stack-engineer-career-path
-# portfolio
-# portfolio
