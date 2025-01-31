@@ -1,0 +1,567 @@
+html {
+    font-size: 16px;
+    font-family: "Manrope", Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: inherit;
+}
+
+h1 {
+    font-size: 5rem;
+    font-weight: 800;
+    line-height: 1;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #8C953E;
+    line-height: 1.5;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+
+p.introPara {
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+/* -- HEADER -- */
+
+header {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    position: fixed;
+    background-color: #343041;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0 0;
+    color: #FFFFFF;
+    z-index: 100;
+    border-bottom: #8C953E 2px solid;
+    box-shadow: 1px 1px 4px #00000090;
+}
+
+#mobileLogo {
+    content: ' ';
+    background-image: url("../images/penrith_wanderers_logo.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+    width: 100%;
+}
+
+#logo {
+    display: flex;
+    font-weight: 900;
+    justify-content: center;
+    font-size: 2rem;
+    padding: 1rem 0 1rem 0;
+    width: 100%;
+}
+
+nav {
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    padding: 1rem 0;
+    background-color: #8C953E;
+}
+
+.navList {
+    display: inline-flex;
+    gap: 1rem;
+}
+
+.navLink,
+.navLink:visited {
+    color: #FFFFFF;
+}
+
+.navLink:hover,
+.navLink:active {
+    color: #343041;
+}
+
+@media only screen and (max-width: 900px) and (orientation: landscape) {
+       
+    #mobileLogo {
+        display: none;
+    }
+
+    #logo {
+        background-image: url("../images/penrith_wanderers_logo.svg");
+        background-repeat: no-repeat;
+        background-position: left center;
+        background-size: contain;
+        padding: 1rem 0 1rem 5rem;
+        justify-content: start;
+        width: 45%;
+        font-size: 1.5rem;
+    }
+
+    nav {
+        margin-top: .5rem;
+        width: 100%;
+        padding: .5rem 0;
+    }
+
+}
+
+@media only screen and (min-width: 1050px) {
+
+    header {
+        justify-content: space-between;
+        padding: 2rem;
+    }
+
+    #mobileLogo {
+        display: none;
+    }
+
+    #logo {
+        background-image: url("../images/penrith_wanderers_logo.svg");
+        background-repeat: no-repeat;
+        background-position: left center;
+        background-size: contain;
+        padding: 1rem 0 1rem 5rem;
+        justify-content: start;
+        width: 45%;
+    }
+
+    nav {
+        justify-content: end;
+        width: 45%;
+        padding: 1.5rem 0;
+        background-color: transparent;
+    }
+
+    .navList {
+        gap: 2rem;
+    }
+
+    .navLink:hover,
+    .navLink:active {
+        color: #8C953E;
+    }
+
+}
+
+/* -- MAIN -- */
+
+main,
+footer {
+    position: relative;
+    top: 8rem;
+}
+
+@media only screen and (min-width: 1050px) {
+
+    main,
+    footer {
+        position: relative;
+        top: 5rem;
+    }
+}
+
+.heroImage {
+    display: flex;
+    width: 100%;
+    height: 80vh;
+    background-image: url("../images/img_5182.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.heroTitle {
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 1px 1px 6px #343041;
+}
+
+.whiteLogo {
+    width: 30%;
+}
+
+.heroTitle h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    color: #FFFFFF;
+    margin: 1rem 0;
+}
+
+.heroImage h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+}
+
+@media only screen and (min-width: 1050px) {
+
+    .heroTitle h1 {
+        font-size: 5rem;
+    }
+
+    .heroImage h3 {
+        font-size: 2rem;
+    }
+
+}
+
+section {
+    padding: 2rem;
+    text-align: center;
+}
+
+@media only screen and (min-width: 1050px) {
+
+    section {
+        padding: 5rem;
+        text-align: center;
+    }
+
+}
+
+.twoColumns {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    gap: 8rem;
+    padding: 2rem 0;
+    text-align: left;
+}
+
+.left2Column,
+.right2Column {
+    max-width: 700px;
+    width: auto;
+}
+
+#gallery {
+    background-color: #343041;
+    color: #8C953E;
+}
+
+.photoGallery {
+    display: grid;
+    grid-template: repeat(6, 12rem) / repeat(2, 1fr);
+    gap: 1rem;
+    padding: 5rem 0;
+}
+
+.greenLink:hover {
+    color: white;
+}
+
+.galleryPhoto {
+    border-radius: 15px;
+    width: 100%;
+}
+
+.galleryPhoto img {
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1200px) {
+    
+    .photoGallery {
+        grid-template: repeat(4, 15rem) / repeat(3, 1fr);
+    }
+}
+
+@media only screen and (min-width: 1050px) {
+    
+    .photoGallery {
+        grid-template: repeat(3, 20rem) / repeat(4, 1fr);
+    }
+}
+
+
+.thumbnail {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 15px;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1049px) {
+
+    .thumbnail {
+        max-height: 20rem;
+    }
+
+}
+
+
+#join {
+    display: flex;
+    width: 100%;
+    height: 60vh;
+    background-image: url("../images/img_7600.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.joinUsCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #34304199;
+    color: #ffffff;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 15px;
+    max-width: 800px;
+}
+
+.joinUsCard h2 {
+    color: #ffffff
+}
+
+.scheduleBtn {
+    background-color: #8C953E;
+    padding: 1rem 1.5rem;
+    width: 100%;
+    border-radius: 15px;
+    margin-top: 1rem;
+    border: #8C953E solid 2px;
+    box-shadow: 2px 2px 3px #343041;
+}
+
+.scheduleBtn:hover {
+    border: #ffffff solid 2px;
+}
+
+.scheduleBtn:active {
+    border: #8C953E solid 2px;
+    background-color: #343041;
+    color: #8C953E;
+}
+
+@media only screen and (min-width: 1050px) {
+
+    #join {
+        height: 60vh;
+    }
+
+    .joinUsCard {
+        padding: 4rem;
+    }
+
+    .scheduleBtn {
+        padding: 1.5rem 4rem;
+    }
+
+}
+
+#contact {
+    background-color: #8C953E;
+    color: #ffffff;
+}
+
+#contact h2 {
+    color: #ffffff;
+}
+
+.contactDetails {
+    display: inline-flex;
+    flex-wrap: wrap;
+    min-width: 50%;
+    justify-content: start;
+    gap: 2rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 1rem 0;
+    text-align: left;
+    color: #343041;
+}
+
+.contactDetails a:hover {
+    color: #ffffff;
+}
+
+.contactDetails .fa {
+    font-size: 1.5rem;
+    vertical-align: middle;
+    padding-right: 1rem;
+}
+
+.location {
+    display: flex;
+}
+
+@media only screen and (min-width: 1050px) {
+
+    .contactDetails {
+        justify-content: center;
+        gap: 5rem;
+        font-size: 1.5rem;
+    }
+
+    .contactDetails .fa {
+        font-size: 2rem;
+        padding-right: 1.2rem;
+    }
+
+}
+
+/* -- FOOTER -- */
+
+footer {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    width: 100%;
+    background-color: #343041;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    color: #FFFFFF;
+    font-size: .8rem;
+}
+
+.footerLeft {
+    width: 100%;
+    text-align: center;
+}
+
+.footerCenter {
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+}
+
+.footerRight {
+    width: 100%;
+    text-align: center;
+}
+
+.socialLinks {
+    display: inline-flex;
+    gap: 1rem;
+    font-size: 1.5rem;
+    color: #8C953E;
+}
+
+.footerNav {
+    display: inline-flex;
+    gap: 1rem;
+}
+
+.socialLinks a {
+    color: #8C953E;
+    text-decoration: none;
+}
+
+.socialLinks a:visited {
+    color: #8C953E;
+}
+
+.socialLinks a:hover {
+    color: #FFFFFF;
+}
+
+.socialLinks a:active {
+    color: 8#FFFFFF;
+}
+
+.footerLink {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.footerLink:visited {
+    color: #FFFFFF;
+}
+
+.footerLink:hover {
+    color: #8C953E;
+}
+
+.footerLink:active {
+    color: #8C953E;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1049px) {
+
+    .footerLeft {
+        width: 45%;
+        text-align: left;
+        padding-top: 1rem;
+    }
+    
+    .footerCenter {
+        width: 45%;
+        text-align: right;
+        padding: 0;
+        position: relative;
+        bottom: 1rem;
+    }
+    
+    .footerRight {
+        width: 45%;
+        text-align: left;
+    }
+
+}
+
+@media only screen and (min-width: 1050px) {
+
+    footer {
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+
+    .footerLeft {
+        width: 20%;
+        text-align: left;
+    }
+    
+    .footerCenter {
+        width: 20%;
+        text-align: center;
+    }
+    
+    .footerRight {
+        width: 20%;
+        text-align: right;
+    }
+
+}

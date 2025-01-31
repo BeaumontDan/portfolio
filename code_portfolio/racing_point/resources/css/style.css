@@ -1,0 +1,629 @@
+/* Copyright (c) 2024 Dan Beaumont - All Rights Reserved 
+ * Developer: Dan Beaumont */
+
+/*--------------------------------
+------------- FONTS --------------
+--------------------------------*/
+
+html {
+    font-size: 16px;
+    font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
+}
+
+a {
+    cursor: pointer;
+}
+
+a:visited {
+    display: none;
+}
+
+a:hover {
+    transition: all ease-in-out .4s;
+    text-decoration: none;
+}
+
+p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-weight: 200;
+}
+
+p a {
+    color: #D21567;
+}
+
+p a:visited {
+    color: #D21567;
+}
+
+p a:hover {
+    transition: all ease-in-out .4s;
+    text-decoration: dotted underline;
+    opacity: 1;
+}
+
+p a:active {
+    transition: all ease-in-out .4s;
+    color: gray;
+    text-decoration: none;
+    opacity: 1;
+}
+
+.highlight {
+    color: #D21567;
+}
+
+/*--------------------------------
+------------- HEADER -------------
+--------------------------------*/
+
+header {
+    display: block;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    background-color: #000221;
+}
+
+.headerContent {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 1.2rem;
+    font-weight: 300;
+    background-color: #000221;
+    color: #ffffff;
+    padding: 1.5rem 1.5rem;
+}
+
+header span {
+    background-repeat: no-repeat;
+    background-image: url("../images/RP_logo_icon.svg");
+}
+
+a.logo {
+    /* Not visible, allows for clickable link */
+    color: transparent;
+    font-family: "Anton", Tahoma, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.headerNav {
+    text-align: right;
+}
+
+/* ------ HEADER SMALL DESKTOP ------*/
+
+@media screen and (min-width: 900px) and (max-width: 1600px) {
+    .headerContent {
+        padding: 2rem 5rem;
+    }
+
+    header span {
+        background-image: url("../images/rp_logotype.svg");
+        font-size: 3rem;
+    }
+}
+
+/* ------ HEADER LARGE DESKTOP ------*/
+
+@media screen and (min-width: 1600px) {
+
+    .headerContent {
+        padding: 1.5rem 20rem;
+    }
+
+    header span {
+        background-image: url("../images/rp_logotype.svg");
+        font-size: 3rem;
+    }
+}
+
+/*--------------------------------
+------------- SOCIAL NAV ---------------
+--------------------------------*/
+
+.headerNav {
+    align-items: center;
+    padding: 0;
+    width: 50%;
+}
+
+.navSocial {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right;
+    gap: 1.5rem;
+    padding: 0;
+    list-style-type: none;
+    color: #ffffff;
+}
+
+.nav-social a {
+    transition: 400ms ease;
+    color: #ffffff;
+}
+
+.nav-social a:visited {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.nav-social a:hover {
+    color: #D21567;
+}
+
+/*--------------------------------
+------------- NAV ---------------
+--------------------------------*/
+
+.navBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    background-color: #D21567;
+    width: 100%;
+}
+
+.navList {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    height: 2.4rem;
+}
+
+.nav-item {
+    height: 100%;
+    width: 6rem;
+    align-content: center;
+    padding: .5rem;
+    text-align: center;
+}
+
+.nav-item:hover {
+    transition: 400ms ease;
+    background-color: #000221;
+}
+
+.nav-link {
+    transition: 400ms ease;
+    color: #ffffff;
+}
+
+.nav-link:visited {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: #D21567;
+}
+
+/*------------------------------
+------------ MAIN -------------
+------------------------------*/
+
+main {
+    position: relative;
+    width: 100%;
+    top: 7rem;
+}
+
+/*------------------------------
+------------ LEAD IMG ------------
+------------------------------*/
+
+
+img {
+    width: 100%;
+}
+
+.leadImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 800px;
+    text-align: center;
+    background-image: url(../images/racing_point_header.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.leadImgTitle {
+    color: #ffffff;
+    background-color: #00022199;
+    text-shadow: 2px 2px 8px #000221;
+    padding: 2rem;
+}
+
+.leadImgTitle h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.leadImgTitle h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+/* ------ Lead Img DESKTOP ------*/
+
+@media screen and (min-width: 900px) {
+
+    .leadImgTitle {
+        padding: 4rem;
+    }
+
+    .leadImgTitle h1 {
+        font-size: 7rem;
+        font-weight: 700;
+    }
+
+    .leadImgTitle h2 {
+        font-size: 3rem;
+        font-weight: 700;
+    }
+
+}
+
+/*------------------------------
+------------ Intro ------------
+------------------------------*/
+
+.intro {
+    display: flex;
+    padding: 2rem 2rem;
+    margin: 5rem 0;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+}
+
+.introCopy {
+    max-width: 900px;
+}
+
+.intro h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.socialLinks li {
+    display: inline-block;
+    list-style: none;
+    font-size: 1.5rem;
+    padding: 1rem;
+    color: #000221;
+}
+
+.socialLinks li a:hover {
+    color: #D21567;
+}
+
+figure {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/*------------------------------
+-------- ON POINT GRID ---------
+------------------------------*/
+
+.onPointGrid {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.onPointGrid img {
+    width: 48%;
+    flex-grow: 1;
+}
+
+
+/* ------ On POINT SMALL DESKTOP ------*/
+
+@media screen and (min-width: 900px) and (max-width: 1600px) {
+    .onPointGrid img {
+        width: 25%;
+    }
+}
+
+/* ------ On POINT SMALL DESKTOP ------*/
+
+@media screen and (min-width: 1600px) {
+    .onPointGrid img {
+        width: 30%;
+    }
+}
+
+/*------------------------------
+------------- TEAM -------------
+------------------------------*/
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #000221;
+    justify-content: center;
+    gap: 2rem;
+    color: #ffffff;
+    padding: 4rem;
+}
+
+.team h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-align: center;
+    width: 100%;
+}
+
+.idCard {
+    width: 100%;
+    text-align: center;
+    flex-shrink: 1;
+}
+
+.idCard h4 {
+    font-size: 1.7rem;
+    margin: 1.5rem 0 1rem;
+}
+
+.idCard h5 {
+    font-size: 1.2rem;
+    color: #D21567;
+}
+
+.teamAvatar {
+    border-radius: 50%;
+    height: auto;
+    width: 100%;
+    flex-shrink: 1;
+    filter: grayscale(100%);
+    opacity: .8;
+    background-color: #000221
+}
+
+.teamAvatar:hover {
+    filter: none;
+    opacity: 1;
+    transition: 400ms ease;
+}
+
+/* ------ Team Small Desktop ------*/
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+    .idCard {
+        width: 40%;
+        text-align: center;
+    }
+}
+
+/* ------ Team Large DESKTOP ------*/
+
+@media screen and (min-width: 900px) {
+    .idCard {
+        width: 25%;
+        text-align: center;
+    }
+}
+
+/*------------------------------
+---------- Tech Talk ----------
+------------------------------*/
+
+.techTalk {
+    display: flex;
+    padding: 2rem 2rem;
+    margin: 5rem 0;
+    width: 100%;
+    justify-content: center;
+}
+
+.techTalkCopy {
+    max-width: 1200px;
+}
+
+.techTalk h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.techTalk h6 {
+    font-size: 1.5rem;
+    font-weight: 200;
+    margin-top: 1rem;
+    color: #D21567;
+}
+
+/*------------------------------
+------------ shop ------------
+------------------------------*/
+
+
+.shop {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 4rem;
+    text-align: center;
+}
+
+.shop h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-align: center;
+    width: 100%;
+}
+
+.shopGrid {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: lightgray;
+    justify-content: center;
+    gap: 2rem;
+    padding: 4rem 0 10rem;
+}
+
+.shopGrid h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-align: center;
+    width: 100%;
+}
+
+.shopCard {
+    width: 45%;
+    text-align: center;
+}
+
+.shopCard h4 {
+    font-size: 1.5rem;
+    margin: 1.5rem 0 1rem;
+}
+
+.shopCard h5 {
+    font-size: 1.2rem;
+    color: #D21567;
+}
+
+.shopItem {
+    border-radius: 15px;
+}
+
+.shopItem img {
+    height: auto;
+    width: auto;
+}
+
+.shopItem:hover {
+    border: solid 3px #D21567;
+}
+
+/* ------ Team DESKTOP ------*/
+
+@media screen and (min-width: 900px) {
+    .shopCard {
+        width: 20%;
+        text-align: center;
+    }
+}
+
+/*------------------------------
+------------ FOOTER ------------
+------------------------------*/
+
+footer {
+    position: relative;
+    top: 3.8rem;
+    display: flex;
+    width: 100%;
+    height: 7rem;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    padding: 2rem 1.5rem;
+    justify-content: space-between;
+    background-color: #000221;
+    color: #ffffff;
+    font-size: .8rem;
+    font-weight: 300;
+}
+
+.footerLeft {
+    width: 100%;
+    justify-content: start;
+    padding: .5rem 0;
+}
+
+.footerRight {
+    display: flex;
+    width: 100%;
+    text-align: left;
+    padding: .5rem 0;
+    justify-content: start;
+}
+
+.footerRight li {
+    display: inline-block;
+    padding: 0 1em 0 0;
+}
+
+.footerRight li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footerRight li a:hover {
+    transition: all .4s;
+    color: #D21567;
+}
+
+/* ------ FOOTER SMALL DESSKTOP ------*/
+
+@media screen and (min-width: 900px) and (max-width: 1600px) {
+    footer {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        padding: 2rem 5rem;
+        font-size: .9rem;
+    }
+
+    .footerLeft {
+        width: 50%;
+    }
+
+    .footerRight {
+        width: 50%;
+        text-align: right;
+        justify-content: end;
+    }
+}
+
+/* ------ FOOTER LARGE DESKTOP ------*/
+
+@media screen and (min-width: 1600px) {
+
+    footer {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        padding: 2rem 20rem;
+        font-size: .9rem;
+    }
+
+    .footerLeft {
+        width: 50%;
+    }
+
+    .footerRight {
+        width: 50%;
+        text-align: right;
+        justify-content: end;
+    }
+
+}
