@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<!--* Copyright (c) 2024 Dan Beaumont - All Rights Reserved 
+    * Developer: Dan Beaumont -->
+
+<head>
+    <title>Dan Beaumont - About Me</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- ICONS -->
+    <link rel="icon" type="image/png" sizes="16x16" href="./resources/images/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./resources/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="./resources/images/favicon/favicon-48x48.png">
+    <link rel="icon" type="image/png" sizes="167x167" href="./resources/images/favicon/favicon-167x167.png">
+    <link rel="icon" type="image/png" sizes="180x180" href="./resources/images/favicon/favicon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./resources/images/favicon/favicon-192x192.png">
+
+    <!-- SOURECED STYLE SHEETS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- STYLE SHEETS -->
+    <link rel="stylesheet" href="./resources/css/reset.css">
+    <link rel="stylesheet" href="./resources/css/style.css">
+
+    <!-- SCRIPTS -->
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Antonio&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+SA&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header class="header headerBlack">
+        <a href="./index.html"><span class="logo">Dan Beaumont</span></a>
+
+        <nav class="nav-bar">
+
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="./about.html" class="nav-link">About Me</a></li>
+                <li class="nav-item"><a href="./branddesign.html" class="nav-link">Brand Design</a></li>
+                <li class="nav-item"><a href="./webdesign.html" class="nav-link">Web Design</a></li>
+                <li class="nav-item"><a href="./contact.html" class="nav-link">Contact</a></li>
+                <li>
+                    <ul class="mobile_social">
+                        <li><a href="mailto:beaumont.dan@gmail.com" target="blank"><img
+                                    src="./resources/images/footericons/email_icon.svg" alt="Email Me"
+                                    title="Email Dan Beaumont"></a></li>
+                        <li><a href="https://www.linkedin.com/in/danbeaumont/" target="blank"><img
+                                    src="./resources/images/footericons/linkedin_icon.svg" alt="in"
+                                    title="Dan Beaumont on LinkedIn"></a></li>
+                        <li><a href="https://www.behance.net/danbeaumont/" target="blank"><img
+                                    src="./resources/images/footericons/behance_icon.svg" alt="Be"
+                                    title="Dan Beaumont on Behance"></a></li>
+                        <li><a href="https://www.instagram.com/beaumont.dan/" target="blank"><img
+                                    src="./resources/images/footericons/instagram_icon.svg" alt="Insta"
+                                    title="Dan Beaumont on Instagram"></a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+
+    </header>
+
+    <!-- LEAD IMAGE / CAROUSEL -->
+    <figure class="leadimage">
+        <img class="headimage_half" src="./resources/images/about_me_portrait.jpg" alt="Dan Beaumont Portrait">
+        <div class="head_img_title">
+            <h1 style="color: black">My Story</h1>
+        </div>
+    </figure>
+
+
+    <main>
+
+        <!-- JUMP TO LINKS-->
+
+        <div>
+            <ul class="jumpTo">
+                <li><a href="#career">Career</a></li>
+                <li><a href="#awards">Awards</a></li>
+                <li><a href="#extracurricular">Extracurricular</a></li>
+            </ul>
+        </div>
+
+        <div id="career" class="twoColumns textOnly">
+            <div class="twoColumnLeft">
+                <p class="firstPara">I&apos;m a multi-disaplined and award&hyphen;winning creative with almost 2
+                    decades experience at a top London design agency, where I have worked with brands from the
+                    small and local to the large and global.</p>
+                <p>I am a winner of the prestegious RSA Design Directions Award, for sustainable packaging,
+                    through which I was awarded a 3 month internship at <a href="https://springetts.co.uk/"
+                        target="_blank" title="Springetts Brand Design Agency Homepage">Springetts Brand Design</a>.</p>
+            </div>
+
+            <div class="twoColumnRight">
+                <p>Those 3 months became 17 years and throughout that time I have developed my craft from Design
+                    Intern to Design Director and Account Director, leading a team of talented designers to
+                    develop strategic and beautiful branding that struck a chord with consumer's emotions.</p>
+                <p>In 2024 I began my new career in IT, studying as a full-stack and Web Developer.</p>
+
+                <!-- CV Modal Open Link-->
+                <p id="modalLink" class="cvModalLink" title="See Dan&apos;s CV">Career Summary and CV <i class="fa fa-arrow-circle-o-right"
+                        aria-hidden="true"></i></p>
+            </div>
+        </div>
+
+        <div id="cvModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <!-- Modal Close Button -->
+                <span class="closeBtn">&times;</span>
+
+                <div class="modalFlex">
+                    <!-- Modal Left Column -->
+                    <div class="modalColumnLeft">
+                        <h4>Career Summary</h4>
+                    </div>
+                    <!-- Modal Right Column -->
+                    <div class="modalColumnRight">
+                        <p>I am a dedicated and meticulous creative thinker with over 17 years of experience
+                            at a top London design agency. I have a degree in Product Design with Animation,
+                            through which I won the national RSA Design Directions Award for sustainable
+                            packaging, awarding me a design internship. From intern to full&hyphen;time
+                            designer, I swiftly advanced to become Design Director, leading a team of
+                            designers to develop strategic and beautiful branding that struck a chord with
+                            consumer's emotions.</p>
+                        <p>My communication, organisational and leadership skills have seen me transition to
+                            a client services&hyphen;focused position as Account Director. I have changed
+                            the habits of a nation with the award-winning Happy Egg Co., from 75&percnt;
+                            caged purchases to 75&percnt; free range. With the invention of Nuii and forging
+                            strong relationships and friendships with influential individuals throughout the
+                            Froneri business, I brought many more brands to the agency from Europe,
+                            Australia and the US.</p>
+                    </div>
+                </div>
+
+                <!-- BELLS OF LAZONBY -->
+
+                <div class="modalFlex">
+                    <!-- Modal Left Column -->
+                    <div class="modalColumnLeft">
+                        <h4>Expirience</h4>
+                        <h5>Procurement Assistant</h5>
+                        <p>Bells of Lazonby Ltd. &vert; 2023 - 2024</p>
+                    </div>
+                    <!-- Modal Right Column -->
+                    <div class="modalColumnRight">
+                        <p>I was responsible for reviewing the daily production plan for both bakeries,
+                            standard and Gluten&hyphen;Free, reacting to unforeseen issues or changes, and
+                            working collaboratively with production and our suppliers to establish the
+                            optimal solution.</p>
+                        <ul class="expirienceList" role="presentation">
+                            <li>Ordered packaging at the best price per 1,000 and according to lead times.
+                            </li>
+                            <li>I arranged for consignment stock to be delivered daily&sol;weekly to two
+                                bakeries.</li>
+                            <li>I standardised supplier call&hyphen;off documents for a consistent approach
+                                to reduce the possibility of human error.</li>
+                            <li>I introduced a robust tracking document for developing new packaging with
+                                suppliers and bringing the responsibility under procurement rather than each
+                                Account Manager.</li>
+                            <li>I provided regular guidance from my past career experience and advised the
+                                marketing team on their ongoing redesign of the We Love Cake brand.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- SPRINGETTS ACCOUNT DIRECTOR -->
+
+                <div class="modalFlex">
+                    <!-- Modal Left Column -->
+                    <div class="modalColumnLeft">
+                        <h5>Account Director</h5>
+                        <p>Springetts Brand Design &vert; 2019 - 2023</p>
+                    </div>
+                    <!-- Modal Right Column -->
+                    <div class="modalColumnRight">
+                        <p>I offered a unique client service, daily account management combined with
+                            creative insight and understanding of the creative process from brief to launch.
+                        </p>
+                        <ul class="expirienceList" role="presentation">
+                            <li>Advised clients on daily brand management and new growth opportunities
+                                within their market.</li>
+                            <li>Negotiated a new cost matrix with clients, implementing a 10&percnt; fee
+                                increase.</li>
+                            <li>Devised alternative creative processes to meet client requirements within
+                                tight budgets.</li>
+                            <li>Facilitated co&hyphen;creative sessions with clients, including AG Barr from
+                                which I produced the new brand strategy and internal creative brief.</li>
+                            <li>I assisted Creative Directors with project planning, scheduling and
+                                quotations.</li>
+                            <li>Introduced a studio scheduling system and managed creative time efficiently
+                                throughout the agency and according to project value.</li>
+                            <li>Accounts worth circa &pound;1m.</li>
+                            <li>Line manager and mentor for two Account Managers.</li>
+                            <li>Client Partnerships&colon; <i>Froneri International, The Compleat Food
+                                    Group, Kettle Foods, AG Barr, AkzoNobel, Red Tractor, Pilgrims UK, Monty
+                                    Bojangles.</i></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- SPRINGETTS DESIGN DIRECTOR -->
+
+                <div class="modalFlex">
+                    <!-- Modal Left Column -->
+                    <div class="modalColumnLeft">
+                        <h5>Design Director</h5>
+                        <p>Springetts Brand Design &vert; 2013 - 2019</p>
+                    </div>
+                    <!-- Modal Right Column -->
+                    <div class="modalColumnRight">
+                        <p>Led a team of junior &amp; senior designers, guiding them through our creative
+                            process, from briefing to the release of final artwork, whilst producing
+                            exceptional designs for multiple client accounts.</p>
+                        <ul class="expirienceList" role="presentation">
+                            <li>Accepted project briefs and negotiated project fees from &pound;5k through
+                                to &pound;200k.</li>
+                            <li>Implemented appropriate creative processes and timelines and assigned
+                                projects to suitable team members.</li>
+                            <li>Directed winning creative pitches, including accounts with Kettle Foods and
+                                Vimto.</li>
+                            <li>Outlined tailored strategic marketing approaches, including for a
+                                pan&hyphen;European ice cream brand and led the creative development through
+                                to the launch of Nuii. The brand is now available in 20 countries with over
+                                1 billion sticks sold <i>&lpar;as of Feb 2024&rpar;</i>. Through this success, I brought ten further Froneri brands to the
+                                        agency for strategic and creative reviews.
+                            </li>
+                            <li>Mentored young talent into senior and Director positions, one going on to be
+                                founder/owner of their agency.</li>
+                            <li>Clients: <i>Froneri, Kettle Foods, AkzoNobel, Time Products, Garden of Life,
+                                    Noble Foods, Weetabix, Nichols PLC.</i></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- SPRINGETTS SENIOR DESIGNER -->
+
+                <div class="modalFlex">
+                    <!-- Modal Left Column -->
+                    <div class="modalColumnLeft">
+                        <h5>Senior Designer</h5>
+                        <p>Springetts Brand Design &vert; 2011 - 2013</p>
+                    </div>
+                    <!-- Modal Right Column -->
+                    <div class="modalColumnRight">
+                        <p>Lead designer and manager of my assigned projects, quotations, lead times and
+                            scheduling.</p>
+                        <ul class="expirienceList" role="presentation">
+                            <li>Forged a strong relationship with the team at Young&apos;s Seafood, becoming
+                                lead contact for all product developments and design adaptions and
+                                supporting the brand to reach a &pound;200m value for the first time.</li>
+                            <li>Managed the &pound;250k redesign of Vimto, from strategic workshops to
+                                conceptual beginnings and oversaw critical paths for the phased rollout of
+                                over 100 SKUs and licensed products through to the final design and artwork
+                                as key client contact.</li>
+                            <li>Created the <i>Gastro</i> added value range for <i>Young&apos;s Seafood</i>,
+                                <i>&lpar;as of Feb 2019&rpar;</i> worth &pound;66m, twice that of the
+                                nearest competitor.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- SPRINGETTS DESIGNER -->
+
+                <div class="modalFlex">
+                    <!-- Modal Left Column -->
+                    <div class="modalColumnLeft">
+                        <h5>Designer</h5>
+                        <p>Springetts Brand Design &vert; 2007 - 2011</p>
+                    </div>
+                    <!-- Modal Right Column -->
+                    <div class="modalColumnRight">
+                        <p>I worked with a large team of 50 creatives, developing branding and packaging
+                            concepts for clients, from small and local to large and global.</p>
+                        <ul class="expirienceList" role="presentation">
+                            <li>Changed the habits of consumers and retailers alike by creating the
+                                multi-award-winning Happy Egg Co. brand, which grew from &pound;0 to
+                                &pound;80m within two years.</li>
+                            <li>Directed the rollout of new branding for Bendicks Bittermints and range
+                                expansion rollout &hyphen; branding remains today, 15 years on.</li>
+                            <li>Designed the Wimbledon Championship Limited Edition branding for Evian, the
+                                official bottled water 2008.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <hr> <!--- HORIZONTAL LINE -->
+
+                <!-- QUALIFICATIONS -->
+
+                <div class="modalFlex">
+                    <!-- Modal Left Column -->
+                    <div class="modalColumnLeft">
+                        <h4>Qualifications</h4>
+                    </div>
+                    <!-- Modal Right Column -->
+                    <div class="modalColumnRight">
+                        <h5>Coding Traineeship</h5>
+                        <p>IT Career Switch &vert; 2025</p>
+                        <h5>BA (Hons) Product Design with Animation</h5>
+                        <p>University Of Huddersfield &vert; 2007</p>
+                        <aside>My final year project was entred into the national RSA Design Directions Awards, and
+                            selected as a winner of the Sustainable Packaging category.</aside>
+                        <br><br>
+                        <h5>A-Level Product Design</h5>
+                        <p>Hartlepool Sixth Form College &vert; 2004</p>
+                        <br><br>
+                        <h5>AVCE Art & Design</h5>
+                        <p>Hartlepool Sixth Form College &vert; 2004</p>
+                        <aside>Advanced Vocational Certificate in Education&semi; equivalent to 2 A&hyphen;Levels.
+                        </aside>
+                        <br><br>
+                        <h5>11 GCSE A - C</h5>
+                        <p>High Tunstall College Of Science &vert; 2002</p>
+                        <aside>Including. Design & Technology &lpar;<strong>A</strong>&rpar; & Art
+                            &lpar;<strong>A</strong>&rpar;.</aside>
+                    </div>
+                </div>
+
+                <!-- DOWNLOAD / CONNECT (LinkedIn) -->
+
+                <div>
+                    <ul class="contactroundels">
+                        <li><a href="./resources/documents/danbeaumont_cv.pdf" target="blank"><img
+                                    src="./resources/images/footericons/download_icon_black.svg" alt="download"
+                                    title="Download Dans Resume"></a></li>
+                        <li><a href="https://www.linkedin.com/in/danbeaumont/" target="blank"><img
+                                    src="./resources/images/footericons/linkedin_icon_black.svg" alt="In"
+                                    title="See more on LinkedIn"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <figure class="bodyWidthImg">
+            <img src="./resources/images/clients.jpg" alt="A list of client and brand logos">
+        </figure>
+
+        <!-- End of Career div -->
+
+        <!-- AWARDS -->
+
+        <div id="awards" class="awardsContainer">
+            <ul class="awards">
+                <li>
+                    <ul class="awardsNest">
+                        <li><img class="awardLogo" src="./resources/images/dba_award.svg" alt="DBA Award"
+                                style="height: 4em;"></li>
+                        <li>
+                            <h5 class="awardsH5">DBA Design Effectiveness</h5>
+                        </li>
+                        <li>
+                            <p class="awardsp">The Happy Egg co. &hyphen; GOLD</p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="awardsNest">
+                        <li><img class="awardLogo" src="./resources/images/pentawards_logo.svg" alt="Pentaward"
+                                style="width: 4em;"></li>
+                        <li>
+                            <h5 class="awardsH5">Pentaward</h5>
+                        </li>
+                        <li>
+                            <p class="awardsp">Wild Nuts - Nomination</p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="awardsNest">
+                        <li><img class="awardLogo" src="./resources/images/grocer_award.svg" alt="Grocer Award"
+                                style="height: 4em;"></li>
+                        <li>
+                            <h5 class="awardsH5">Grocer Food Brand&ast;</h5>
+                        </li>
+                        <li>
+                            <p class="awardsp">The Happy Egg co.</p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="awardsNest">
+                        <li><img class="awardLogo" src="./resources/images/pentawards_logo.svg" alt="Pentaward"
+                                style="height: 4em;"></li>
+                        <li>
+                            <h5 class="awardsH5">Pentawards Concept</h5>
+                        </li>
+                        <li>
+                            <p class="awardsp">Just Laid Eggs &hyphen; GOLD</p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="awardsNest">
+                        <li><img class="awardLogo" src="./resources/images/rsa_award.svg" alt="RSA Award"
+                                style="height: 4em;"></li>
+                        <li>
+                            <h5 class="awardsH5">RSA Design Directions</h5>
+                        </li>
+                        <li>
+                            <p class="awardsp">Sustainable Packaging</p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="awardsNest">
+                        <li><img class="awardLogo" src="./resources/images/pentawards_logo.svg" alt="Pentaward"
+                                style="width: 4em;"></li>
+                        <li>
+                            <h5 class="awardsH5">HAHAHA Lars Wallentin</h5>
+                        </li>
+                        <li>
+                            <p class="awardsp">Just Laid Eggs</p>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div>
+        <!-- End of Awards div -->
+
+        <!-- HOBBIES / INTERESTS -->
+
+        <div id="extracurricular" class="twoColumns textOnly">
+            <div class="twoColumnLeft">
+                <p class="firstPara">Originally from Hartlepool, a costal town in North&hyphen;east England&semi; my
+                    early years where spent either doodling away or bounding about outside, with many a family
+                    holiday camping and hiking in thee Lake District fells.</p>
+            </div>
+
+            <div class="twoColumnRight">
+                <p>Little did I know then, that I would still be doing those boyhood things as an
+                    adult! The crayon doodler became the London&hyphen;based brand designer and the outdoorsy
+                    adventurer has led me back to the lakeland fells, where I now live and work.</p>
+            </div>
+        </div>
+
+        <!--- PHOTO SCROLL GALLERY -->
+
+        <div id="instaGallery" class="instaGallery">
+            <img class="instaPhoto" src="./resources/images/insta_gallery/summit.jpg" alt="Summit">
+            <img class="instaPhoto" src="./resources/images/insta_gallery/kayak.jpg" alt="Kayak">
+            <img class="instaPhoto" src="./resources/images/insta_gallery/icey_ullswater.jpg" alt="Icey_Ullswater">
+            <img class="instaPhoto" src="./resources/images/insta_gallery/fells_sunrise.jpg" alt="Sunrise_Fells">
+            <img class="instaPhoto" src="./resources/images/insta_gallery/sup.jpg" alt="Stand-up_Paddleboard">
+            <img class="instaPhoto" src="./resources/images/insta_gallery/thames_sunset.jpg" alt="River Thames Sunset">
+            <img class="instaPhoto" src="./resources/images/insta_gallery/mountain_selfie.jpg" alt="Mountain_Selfie">
+            <img class="instaPhoto" src="./resources/images/insta_gallery/rolling_fells.jpg" alt="Rolling_Fells">
+            <img class="instaPhoto" src="./resources/images/insta_gallery/sunset_woods.jpg" alt="Sunset_Woodland">
+            <img class="instaPhoto" src="/./resources/images/insta_gallery/sunrise_fell.jpg" alt="Sunrise_Fell">
+            <img class="instaPhoto" src="./resources/images/insta_gallery/sunset_rocks.jpg" alt="Ocean_Sunset">
+            <img class="instaPhoto" src="./resources/images/insta_gallery/cow_selfie.jpg" alt="Highland_Cow_Selfie">
+            <img class="instaPhoto" src="./resources/images/insta_gallery/trig_sun.jpg" alt="Trigpoint_Sunrise">
+            <img class="instaPhoto" src="./resources/images/insta_gallery/formula_ford.jpg" alt="Formula_Ford">
+        </div>
+
+        <div class="twoColumns textOnly">
+            <div class="twoColumnLeft">
+                <p>I&apos;m a keen <i>runner</i>, from weekday 5k to half marathons along the Thames, just because I
+                    could. I find nothing is better for clearing the mind and positive thinking.</p>
+                <p>As my relocation to Cumbria may suggest, I am an avid <i>hiker</i> and love being up in the
+                    fells, taking in the fresh air and beautiful great outdoors. While here my other hobby,
+                    photography, can also shine with spectacular flora and fauna in every direction.</p>
+            </div>
+
+            <div class="twoColumnRight">
+                <p>If not atop the world, I&apos;ll be in the valley and on the water, either speeding by in a
+                    <i>kayak</i> or cruising on a <i>stand&hyphen;up paddleboard</i>.
+                </p>
+                <p>When I'm not adventuring, I can be found <i>doodling</i>, <i>sketching</i> or <i>designing</i>.
+                </p>
+                <p>I'm a huge <i>Formula 1</i> fan following every race. I&apos;ve been lucky enough to drive a
+                    single&hyphen;seater around Silverstone and combined this passion with my design career when
+                    pitching to rebrand the Racing Point F1 team &lpar;now Aston Martin&rpar;.</p>
+            </div>
+        </div>
+
+        <!-- End of Extracurricular div -->
+
+        <!-- Page Footnote - more options - download / behance page-->
+        <div>
+            <a href="./contact.html" title="Click here for contact details">
+                <p style="text-align: center;">Please, get in touch <i class="fa fa-arrow-circle-o-right"
+                        aria-hidden="true"></i></p>
+            </a>
+        </div>
+        <!-- End of Page Footnote-->
+
+    </main>
+
+
+    <footer>
+        <span class="footer_left">&copy; Dan Beaumont
+            <script>document.write(new Date().getFullYear());</script>
+        </span>
+
+        <div class="social_links">
+            <ul>
+                <li><a href="mailto:beaumont.dan@gmail.com" target="blank"><img
+                            src="./resources/images/footericons/email_icon.svg" alt="Envelope Icon"
+                            title="Email Dan Beaumont"></a>
+                </li>
+                <li><a href="https://www.linkedin.com/in/danbeaumont/" target="blank"><img
+                            src="./resources/images/footericons/linkedin_icon.svg" alt="LinkedIn Logo"
+                            title="Dan Beaumont on LinkedIn"></a></li>
+                <li><a href="https://www.behance.net/danbeaumont/" target="blank"><img
+                            src="./resources/images/footericons/behance_icon.svg" alt="Behance Logo"
+                            title="Dan Beaumont on Behance"></a></li>
+                <li><a href="https://github.com/BeaumontDan" target="blank"><img
+                            src="./resources/images/footericons/github_icon.svg" alt="GitHub Logo"
+                            title="Dan Beaumont on GitHube"></a></li>
+                <li><a href="https://www.instagram.com/beaumont.dan/" target="blank"><img
+                            src="./resources/images/footericons/instagram_icon.svg" alt="Instagram Logo"
+                            title="Dan Beaumont on Instagram"></a></li>
+            </ul>
+        </div>
+
+        <nav class="footer_right">
+            <ul class="footerNav">
+                <li><a href="./privacypolicy.html">Privacy Policy</a></li>
+                <li><a href="./sitemap.html">Sitemap</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="./resources/scripts/danbeaumont_script.js"></script>
+</body>
+
+</html>
