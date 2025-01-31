@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<!--* Copyright (c) 2024 Dan Beaumont - All Rights Reserved 
+    * Developer: Dan Beaumont -->
+
+<head>
+
+    <title>Dan Beaumont&apos;s Website Styleguide</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./resources/images/favicon.png">
+
+    <!-- SOURECED STYLE SHEETS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <!-- STYLE SHEETS -->
+    <link rel="stylesheet" href="./resources/css/style.css">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Antonio&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+SA&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+        <h2>My Style Guide</h2>
+    </header>
+
+    <main>
+        <section id="colors">
+            <h3>Colours</h3>
+
+            <div class="itemContainer">
+                <div class="colorSwatch black">
+                    <h4>Black</h4>
+                    <p>&num;000000<br>
+                        RGB&colon; &lpar;0,0,0&rpar;</p>
+                    <p class="small">Used for Header, Footer and hilighted sections.<br>
+                        Standard text colour throughout website.</p>
+                </div>
+
+                <div class="colorSwatch white">
+                    <h4>White</h4>
+                    <p>&num;ffffff<br>
+                        RGB&colon; &lpar;255,255,255&rpar;</p>
+                    <p class="small">Used for Header Banners, main beackground and reveresed text colour.</p>
+                </div>
+
+                <div class="colorSwatch gray">
+                    <h4>Cool Gray</h4>
+                    <p>&num;D3D3D3<br>
+                        RGB&colon; &lpar;211,211,211&rpar;</p>
+                    <p class="small">To pull out hilighted or secondary sections and blocks</p>
+                </div>
+
+                <div class="colorSwatch blue">
+                    <h4>Warm Blue</h4>
+                    <p>&num;087DE7<br>
+                        RGB&colon; &lpar;8,125,231&rpar;</p>
+                    <p class="small">Text based links and fine details throughout the site</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="fonts">
+            <h3>Typefaces</h3>
+            <div class="itemContainer">
+                <article>
+                    <h4 class="anton-regular">Anton</h4>
+                    <p class="anton-regular">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z<br>
+                        1 2 3 4 5 6 7 8 9 1 0 . , &semi; &colon; &amp; &quot; &apos; &lpar; &rpar; ! ?</p>
+
+                    <p class="anton-regular">Regular</p>
+
+                    <p class="small">For site logo and H1 only</p>
+                    <p class="small"><a href="https://fonts.google.com/specimen/Anton?query=anton"
+                            target="_blank">Google Font &hyphen; Anton</a></p>
+                </article>
+
+                <article>
+                    <h4 class="antonio">Antonio</h4>
+                    <p class="antonio">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z<br>
+                        1 2 3 4 5 6 7 8 9 1 0 . , &semi; &colon; &amp; &quot; &apos; &lpar; &rpar; ! ?</p>
+
+                    <p class="antonio">
+                        <span class="antonio" style="font-weight: 100;">Fine</span> &hyphen;
+                        <span class="antonio" style="font-weight: 400;">Regular</span> &hyphen;
+                        <span class="antonio" style="font-weight: 700;">Bold</span> &hyphen;
+                        <span class="antonio" style="font-weight: 100; font-style: italic;">Italic</span>
+                    </p>
+
+                    <p class="small">For headings h2 &hyphen; h6, throughout site.</p>
+                    <p class="small"><a href="https://fonts.google.com/specimen/Antonio" target="_blank">Google Font
+                            &hyphen; Antonio</a></p>
+                </article>
+
+                <article>
+                    <h4 class="nunito-sans" style="font-weight: 700;">Nunito&hyphen;Sans</h4>
+                    <p class="nunito-sans">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z<br>
+                        1 2 3 4 5 6 7 8 9 1 0 . , &semi; &colon; &amp; &quot; &apos; &lpar; &rpar; ! ?</p>
+                    <p class="nunito-sans">
+                        <span style="font-weight:100;">Fine</span> &hyphen;
+                        <span style="font-weight:400;">Regular</span> &hyphen;
+                        <b>Bold</b> &hyphen;
+                        <em>Italic</em>
+                    </p>
+                    <p class="small">For all body copy and paragraphs.</p>
+                    <p class="small"><a href="https://fonts.google.com/specimen/Nunito+Sans" target="_blank">Google Font
+                            &hyphen; Nunito Sans</a></p>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="textStyles">
+            <h3>Text Styles</h3>
+            <div>
+                <article>
+                    <h1>H1&colon; Main Page Heading</h1>
+                    <ul>
+                        <li>Font&hyphen;family&colon; Anton</li>
+                        <li>Font&hyphen;weight&colon; 400&lpar;regular&rpar;</li>
+                        <li>Font&hyphen;size&colon; vw Resonsive</li>
+                        <li>Use&colon; For main page and site location headings only</li>
+                    </ul>
+                </article>
+
+                <article>
+                    <h2>H2&colon; Secondary Headings</h2>
+                    <ul>
+                        <li>Font&hyphen;family&colon; Antonio</li>
+                        <li>Font&hyphen;weight&colon; 400&lpar;regular&rpar;</li>
+                        <li>Font&hyphen;size&colon; 2em</li>
+                        <li>Use&colon; Secondary page headings and portfolio project titles</li>
+                    </ul>
+                </article>
+
+                <article>
+                    <h3>H3&colon; Tertiary Headings</h3>
+                    <ul>
+                        <li>Font&hyphen;family&colon; Antonio</li>
+                        <li>Font&hyphen;weight&colon; 200&lpar;lighter&rpar;</li>
+                        <li>Font&hyphen;size&colon; 1.4em</li>
+                        <li>Use&colon; Paragraph and Article Titles</li>
+                    </ul>
+                </article>
+
+                <article>
+                    <h4>H4&colon; Portfolio Grid Headings</h4>
+                    <ul>
+                        <li>Font&hyphen;family&colon; Antonio</li>
+                        <li>Font&hyphen;weight&colon; 400&lpar;regular&rpar;</li>
+                        <li>Font&hyphen;size&colon; 1.5em</li>
+                        <li>Use&colon; Portfolio Thumbnail Titles</li>
+                    </ul>
+                </article>
+
+                <article>
+                    <p class="firstPara">p.firstPara&colon; Page Intro</p>
+                    <ul>
+                        <li>Font&hyphen;family&colon; Nunito&hyphen;Sans</li>
+                        <li>Font&hyphen;weight&colon; 700&lpar;bold&rpar;</li>
+                        <li>Font&hyphen;size&colon; 1.3em</li>
+                        <li>Use&colon; Section and page intro paragraphs</li>
+                    </ul>
+                </article>
+
+
+                <article>
+                    <p>Paragraphs</p>
+                    <ul>
+                        <li>Font&hyphen;family&colon; Nunito&hyphen;Sans</li>
+                        <li>Font&hyphen;weight&colon; 400&lpar;regular&rpar;</li>
+                        <li>Font&hyphen;size&colon; 1.1em</li>
+                        <li>Use&colon; Body copy and paragraphs</li>
+                    </ul>
+                </article>
+
+                <article>
+                    <p class="small">Small Paragraphs</p>
+                    <ul>
+                        <li>Font&hyphen;family&colon; Nunito&hyphen;Sans</li>
+                        <li>Font&hyphen;weight&colon; 400&lpar;regular&rpar;</li>
+                        <li>Font&hyphen;size&colon; 15px</li>
+                        <li>Use&colon; Team Credits and Footer</li>
+                    </ul>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="layout">
+            <h3>Page Layout</h3>
+
+            <div class="pageLayout">
+                <div class="wireframe">
+                    <div class="template head">
+                        <h4>PAGE TITLE</h4>
+                        <h6 class="logo">Logo</h6>
+                        <h6 class="nav">Nav</h6>
+                    </div>
+                </div>
+
+                <div class="wireframe">
+                    <div class="template">
+                        <h5>Page Intro</h5>
+                        <p class="small"><br>Aliquam faucibus ex nibh. Donec sed viverra libero. Proin orci arcu,
+                            consectetur
+                            eget sodales eget, viverra at nunc. Vivamus id leo sem. Donec fringilla vulputate risus non
+                            laoreet. Sed vitae pulvinar ipsum. Vestibulum molestie, ligula sit amet tristique dictum,
+                            magna
+                            mauris commodo turpis, at dapibus eros metus in erat.</p>
+                    </div>
+                </div>
+
+                <div class="columns">
+                    <div class="wireframe leftColumn">
+
+                        <div class="template">
+                            <h5>Column Text</h5>
+                            <p class="small"><br>Aliquam faucibus ex nibh. Donec sed viverra libero. Proin orci arcu,
+                                consectetur eget sodales eget, viverra at nunc. Vivamus id leo sem. Donec fringilla
+                                vulputate risus non laoreet. Sed vitae pulvinar ipsum. Vestibulum molestie, ligula sit
+                                amet
+                                tristique dictum, magna mauris commodo turpis, at dapibus eros metus in erat.</p>
+                        </div>
+                    </div>
+
+                    <div class="wireframe  rightColumn">
+
+                        <div class="template image">
+                            <h5>Coulmn Image</h5>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="wireframe">
+                    <div class="template image">
+                        <h5>Full Width Image</h5>
+                    </div>
+                </div>
+
+                <div class="columns">
+                    <div class="wireframe leftColumn">
+                        <div class="template image">
+                            <h5>Coulmn Image</h5>
+                        </div>
+                    </div>
+
+                    <div class="wireframe  rightColumn">
+                        <div class="template">
+                            <h5>Column Text</h5>
+                            <p class="small"><br>Aliquam faucibus ex nibh. Donec sed viverra libero. Proin orci arcu,
+                                consectetur eget sodales eget, viverra at nunc. Vivamus id leo sem. Donec fringilla
+                                vulputate risus non laoreet. Sed vitae pulvinar ipsum. Vestibulum molestie, ligula sit
+                                amet
+                                tristique dictum, magna mauris commodo turpis, at dapibus eros metus in erat.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wireframe">
+                    <div class="template">
+                        <h5>Footer</h5>
+                        <h6 class="copyright">Copyright</h6>
+                        <h6 class="links">Links</h6>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>&copy; Dan Beaumont 2024</p>
+    </footer>
+
+</body>
+
+</html>

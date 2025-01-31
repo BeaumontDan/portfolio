@@ -1,0 +1,407 @@
+/* Copyright (c) 2024 Dan Beaumont - All Rights Reserved 
+ * Developer: Dan Beaumont */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
+}
+
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header, main, footer {
+    padding: 1em;
+}
+
+/*--------------------------------
+------------- FONTS --------------
+--------------------------------*/
+
+.anton-regular {
+    font-family: "Anton", Tahoma, sans-serif;
+}
+
+.nunito-sans {
+    font-family: "Nunito Sans", Tahoma, sans-serif;
+    /* <weight>: Use a value from 200 to 1000 */
+}
+
+.antonio {
+    font-family: "Antonio", Tahoma, sans-serif;
+    /* <weight>: Use a value from 100 to 700 */
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Antonio", Tahoma, sans-serif;
+    font-style: normal;
+}
+
+h1 {
+    font-family: "Anton", Tahoma, sans-serif;
+    font-size: 15vw;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*For Page Header Titles Only*/
+
+h2 {
+    font-family: "Antonio", Tahoma, sans-serif;
+    font-size: 2em;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h3 {
+    font-family: "Antonio", Tahoma, sans-serif;
+    font-size: 1.4em;
+    font-weight: 200;
+    font-style: normal;
+}
+
+h4 {
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+h5 {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+h6 {
+    font-size: 1em;
+    font-weight: 400;
+}
+
+p,
+aside {
+    font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-size: 1.1em;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+p.firstPara {
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
+p.small {
+    font-size: .9em;
+}
+
+aside {
+    font-weight: 100;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 100;
+    color: inherit;
+    cursor: pointer;
+}
+
+a:visited {
+    display: none;
+}
+
+a:hover {
+    transition: all ease-in-out .4s;
+    opacity: 0.5;
+    text-decoration: none;
+}
+
+p a {
+    color: #087DE7;
+}
+
+p a:hover {
+    transition: all ease-in-out .4s;
+    text-decoration: dotted underline;
+    opacity: 1;
+}
+
+p a:active {
+    transition: all ease-in-out .4s;
+    color: gray;
+    text-decoration: none;
+    opacity: 1;
+}
+
+/*------------------------------
+------------- BODY -------------
+------------------------------*/
+
+body {
+    background-color: #D3D3D3;
+}
+
+section {
+    background-color: white;
+    padding: 2em;
+    margin: 2em 0;
+    border-radius: 15px;
+}
+
+.itemContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 2em 0;
+}
+
+.colorSwatch {
+    display: inline-block;
+    padding: 2em;
+    width: 20em;
+    height: 20em;
+    margin: 1em;
+    flex-grow: 1;
+}
+
+.colorSwatch.black {
+    color: #ffffff;
+    background-color: #000000;
+}
+
+.colorSwatch.white {
+    color: #000000;
+    background-color: #ffffff;
+    border: solid 1px #000000
+}
+
+.colorSwatch.gray {
+    color: #000000;
+    background-color: #D3D3D3;
+}
+
+.colorSwatch.blue {
+    color: #ffffff;
+    background-color: #087DE7;
+}
+
+article {
+    margin: 2em 0;
+    padding: 0 2em;
+    flex-grow: 1;
+}
+
+ul {
+    padding-left: 2em;
+    width: 30%;
+}
+
+/*------------------------------
+---------- PAGE LAYOUT ---------
+------------------------------*/
+
+.pageLayout {
+    width: 85%;
+    margin: 5em;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.template {
+    width: 100%;
+    padding: 1em;
+    margin: 2em 0;
+}
+
+.template.head {
+    height: 20em;
+    align-items: center;
+}
+
+.template.image {
+    height: 40em;
+    align-items: center;
+}
+
+.logo {
+    text-align: left;
+    position: relative;
+    bottom: 2em;
+}
+
+.nav  {
+    text-align: right;
+    float: right;
+    position: relative;
+    bottom: 3em;
+}
+
+.copyright {
+    float: left;
+    text-align: left;
+    position: relative;
+    bottom: 2em;
+}
+
+.links  {
+    float: right;
+    text-align: right;
+    position: relative;
+    bottom: 2em;
+}
+
+.template h4 {
+    text-align: center;
+    position: relative;
+    top: 45%;
+    bottom: 50%;
+    align-items: center;
+}
+
+.template h5 {
+    text-align: center;
+}
+
+.template p {
+    text-align: center;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.columns {
+    display: flex;
+    width: 100%;
+    height: 30em;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+}
+
+.wireframe.leftColumn {
+    width: 49%;
+}
+
+.wireframe.rightColumn {
+    width: 49%;
+}
+
+.wireframe {outline: 2px solid gray;
+    background:
+       linear-gradient(to top right,
+          transparent 49.9%, gray 49.9%,
+          gray 50.1%, transparent 50.1%),
+       linear-gradient(to bottom right,
+          transparent 49.9%, gray 49.9%,
+          gray 50.1%, transparent 50.1%);
+    background-color: lightgray;
+ }
+
+/*------------------------------
+------------ FOOTER ------------
+------------------------------*/
+
+footer {
+    width: 100%;
+    height: auto;
+    padding: 1em;
+    font-size: 0.9em;
+    font-weight: 100;
+    background-color: #000000;
+    color: #ffffff;
+    align-items: center;
+}
+
+footer p {
+    text-align: center;
+    font-size: 15px;
+}
+
+/*------------------------------------
+--------------------------------------
+----- LARGE DESKTOP CSS - START ------
+--------------------------------------
+------------------------------------*/
+
+
+@media screen and (min-width: 1200px) {
+
+    h1 {
+        font-size: 6vw;
+    }
+
+    /*For Page Header Titles Only*/
+
+    h2 {
+        font-size: 4vw;
+    }
+
+    h3 {
+        font-size: 2.5em;
+    }
+
+    h4 {
+        font-size: 1.7em;
+    }
+
+    h5 {
+        font-size: 1.3em;
+        text-align: left;
+    }
+
+    h6 {
+        font-size: 1em;
+    }
+
+    p {
+        font-size: 1.6em;
+    }
+
+    p.firstPara {
+        font-size: 2.2em;
+        line-height: 1.5em;
+    }
+
+    header {
+        padding: 0 15%;
+    }
+
+    /*------------------------------
+    ------------- MAIN -------------
+    ------------------------------*/
+
+    main {
+        padding: 0 15%;
+    }
+
+    .pageLayout {
+        width: 70%;
+        margin: 5em;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .template p {
+        width: 50%;
+    }
+
+    /*------------------------------
+    ------------ FOOTER ------------
+    ------------------------------*/
+
+    footer {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+}
+
+/* END - LARGE DESKTOP */
