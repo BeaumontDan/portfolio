@@ -1,0 +1,2335 @@
+/* Copyright (c) 2024 Dan Beaumont - All Rights Reserved 
+ * Developer: Dan Beaumont */
+
+/* Break Points:
+ - MOBILE - max 600px
+ - TABLET - min 601px max 899px
+ - SMALL DESKTOP - min 900
+ - LARGE DESKTOP - min 1200px
+*/
+
+html {
+    font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+/*--------------------------------
+----------- GENERAL ------------
+--------------------------------*/
+
+.anton-regular {
+    font-family: "Anton", Tahoma, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.nunito-sans-100 {
+    font-family: "Nunito Sans", Tahoma, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 100;
+    font-style: normal;
+    /* <weight>: Use a value from 200 to 1000 */
+}
+
+.antonio {
+    font-family: "Antonio", Tahoma, sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    /* <weight>: Use a value from 100 to 700 */
+}
+
+
+a {
+    font-weight: 100;
+    color: inherit;
+}
+
+a:visited {
+    display: none;
+}
+
+a:hover {
+    transition: all ease-in-out .4s;
+    text-decoration: none;
+}
+
+
+/*------ MOBILE GENERAL ------*/
+
+@media screen and (max-width: 600px) {
+    .hideMob {
+        display: none;
+    }
+}
+
+/*------ TABLET GENERAL ------*/
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+
+    .hideTablet {
+        display: none;
+    }
+}
+
+/*--------------------------------
+----------- TYPOGRAPHY ------------
+--------------------------------*/
+
+/*For Page Header Titles Only*/
+h1 {
+    font-family: "Anton", Tahoma, sans-serif;
+    font-size: 5rem;
+    font-weight: 400;
+    line-height: 1.1;
+    font-style: normal;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Antonio", Tahoma, sans-serif;
+    font-style: normal;
+}
+
+h2 {
+    /*For Page Intro Titles - Proejct Titles*/
+    font-size: 2.6rem;
+    font-weight: 400;
+    line-height: 1.4;
+    margin-bottom: 30px;
+}
+
+h3 {
+
+    font-size: 1.7rem;
+    font-weight: 400;
+    margin-bottom: .5rem;
+    margin-top: .5rem;
+}
+
+h4 {
+    /*For Page Paragraph Titles - Brand Names*/
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+h5 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+h6 {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+p,
+p.firstPara,
+p.credits,
+aside {
+    font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
+    font-style: normal;
+}
+
+aside {
+    font-weight: 100;
+    line-height: 1.2;
+}
+
+p {
+    font-size: 1.2rem;
+    font-weight: 100;
+    line-height: 28px;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+    text-align: left;
+}
+
+p.firstPara {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 33px;
+    margin-bottom: 30px;
+}
+
+p.credits {
+    font-size: .6rem;
+    font-weight: 100;
+    color: gray;
+    text-align: center;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+p.caption {
+    font-size: .9rem;
+    font-weight: 100;
+    text-align: center;
+}
+
+p a,
+p a:visited {
+    color: #087DE7;
+}
+
+p a:hover,
+p a:active {
+    transition: all ease-in-out .4s;
+    text-decoration: dotted underline;
+}
+
+p a:active {
+    color: gray;
+}
+
+a.sitemapLink,
+a.sitemapLink:visited {
+    font-size: 20px;
+    font-weight: 300;
+    color: #000000;
+}
+
+a.sitemapLink:hover {
+    color: #087DE7;
+}
+
+blockquote {
+    font-family: "Playwrite AU SA", "Brush Script MT", cursive;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 2;
+    width: 100%;
+    margin: 0;
+    color: #000000;
+}
+
+/*------ MOBILE TYPOGRAPHY ------*/
+
+@media screen and (max-width: 600px) {
+
+    .centerTitle,
+    .centerPara {
+        width: 100%;
+        padding: 0 2rem;
+        text-align: center;
+    }
+
+    .folioTextBlock {
+        width: 100%;
+        padding: 4rem 2rem;
+    }
+}
+
+/*------ TABLET TYPOGRAPHY ------*/
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+
+    h1 {
+        /*For Page Header Titles*/
+        font-size: 8rem;
+        line-height: 1;
+    }
+
+    h2 {
+        /*For Page Intro Titles - Proejct Titles*/
+        font-size: 5rem;
+        line-height: 1.2;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+        font-weight: 200;
+        margin-bottom: .5rem;
+        margin-top: .5rem;
+    }
+
+    h4 {
+        /*For Page Paragraph Titles - Brand Names*/
+        font-size: 1.3rem;
+        font-weight: 400;
+        line-height: 1.5;
+    }
+
+    .centerTitle {
+        text-align: center;
+    }
+
+    .centerPara {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 600px;
+        text-align: center;
+    }
+
+    .folioTextBlock {
+        width: 100%;
+        padding: 4rem 2rem;
+    }
+
+}
+
+/*------ SMALL DESKTOP TYPOGRAPHY ------*/
+
+@media screen and (min-width: 900px) {
+
+    h1 {
+        font-size: 10rem;
+        line-height: 1;
+    }
+
+    /*For Page Header Titles Only*/
+
+    h2 {
+        font-size: 5vw;
+        margin-bottom: 30px;
+    }
+
+    h3 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+
+    h4 {
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+    }
+
+    h5 {
+        font-size: 1.1rem;
+        text-align: left;
+    }
+
+    h6 {
+        font-size: .8rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+        line-height: 40px;
+        margin-top: 10px;
+    }
+
+    p.firstPara {
+        font-size: 1.5rem;
+        line-height: 40px;
+        margin-bottom: 30px;
+    }
+
+    .centerTitle {
+        text-align: center;
+    }
+
+    .centerPara {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 800px;
+        text-align: center;
+    }
+
+    blockquote {
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+        margin-bottom: 30px;
+    }
+
+    .folioTextBlock {
+        width: 100%;
+        padding: 4rem 2rem;
+    }
+}
+
+/*------ LARGE DESKTOP TYPOGRAPHY ------*/
+
+@media screen and (min-width: 1200px) {
+
+    h1 {
+        /*For Page Header Titles Only*/
+        font-size: 10rem;
+        line-height: 1;
+    }
+
+    h2 {
+        font-size: 5rem;
+        margin-bottom: 30px;
+    }
+
+    h3 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+
+    h4 {
+        font-size: 1.7rem;
+        margin-bottom: 15px;
+    }
+
+    h5 {
+        font-size: 1.3em;
+        text-align: left;
+    }
+
+    h6 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 1.6rem;
+        line-height: 2;
+        margin-top: 10px;
+    }
+
+    p.firstPara {
+        font-size: 2.2rem;
+        line-height: 1.5;
+        margin-bottom: 30px;
+    }
+
+    .centerPara {
+        max-width: 1000px;
+    }
+
+    blockquote {
+        font-size: 1.8rem;
+        line-height: 2;
+        margin-bottom: 30px;
+    }
+}
+
+/*--------------------------------
+------------- BODY ---------------
+--------------------------------*/
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/*--------------------------------
+------------- HEADER -------------
+--------------------------------*/
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    /* FONTS*/
+    font-size: 1.2rem;
+    font-weight: 100;
+    transition: all 300ms ease-in-out;
+}
+
+header a {
+    font-weight: inherit;
+}
+
+.headerWhite nav a {
+    color: #ffffff;
+}
+
+.headerActive nav a {
+    color: #000000;
+}
+
+.headerNav nav a {
+    color: #ffffff;
+}
+
+.headerBlack nav a {
+    /* Navigation links black for lighter header images*/
+    color: #000000;
+}
+
+.logo {
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: contain;
+    padding: .4rem 0 .4rem 3.5rem;
+    font-family: "Anton", Tahoma, sans-serif;
+    color: white;
+    text-align: left;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+
+.logo:hover {
+    transition: all .4s;
+    opacity: 0.5;
+}
+
+.headerBlack .logo {
+    /* Black Text and Logo for Lighter Backgrounds */
+    background-image: url("/resources/images/db_logo_black.svg");
+    color: transparent;
+}
+
+.headerWhite .logo {
+    /* White Text and Logo for Darker Backgrounds */
+    background-image: url("/resources/images/db_logo_white.svg");
+    color: transparent;
+}
+
+.headerNav .logo {
+    background-image: url("/resources/images/db_logo_white.svg");
+    /* #000000 DB logo for lighter header images*/
+}
+
+.headerActive {
+    /* Switches header / nav bar Text to black on scroll*/
+    background-color: #ffffff;
+    color: transparent;
+}
+
+.headerActive .logo {
+    background-image: url("/resources/images/db_logo_black.svg");
+    color: transparent;
+}
+
+header.headerNav {
+    /* Switches header / nav bar Background to black on mobile burger menu click*/
+    background-color: #000000;
+}
+
+header.headerNav .logo {
+    background-image: url("/resources/images/db_logo_white.svg");
+    color: transparent;
+}
+
+/*----------- HEADER DESKTOP -----------*/
+@media screen and (min-width: 600px) {
+    .headerBlack .logo {
+        /* Black Text and Logo for Lighter Backgrounds */
+        background-image: url("/resources/images/db_logo_black.svg");
+        color: #000000;
+    }
+
+    .headerWhite .logo {
+        /* White Text and Logo for Darker Backgrounds */
+        background-image: url("/resources/images/db_logo_white.svg");
+        color: #ffffff;
+    }
+
+    .headerNav .logo {
+        background-image: url("/resources/images/db_logo_white.svg");
+        /* #000000 DB logo for lighter header images*/
+    }
+
+    .headerActive {
+        /* Switches header / nav bar Text to black on scroll*/
+        background-color: #ffffff;
+        color: #000000;
+    }
+
+    .headerActive .logo {
+        background-image: url("/resources/images/db_logo_black.svg");
+        color: #000000;
+    }
+
+    header.headerNav {
+        /* Switches header / nav bar Background to black on mobile burger menu click*/
+        background-color: #000000;
+    }
+
+    header.headerNav .logo {
+        background-image: url("/resources/images/db_logo_white.svg");
+        color: #ffffff;
+    }
+}
+
+/*--------------------------------
+------------- NAV ---------------
+--------------------------------*/
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+
+.nav-menu {
+    position: fixed;
+    right: -100%;
+    top: 6rem;
+    flex-direction: column;
+    width: 100%;
+    height: calc(100vh);
+    gap: 1.2rem;
+    transition: 750ms;
+    text-align: right;
+    background-color: #000000;
+    padding-right: 1.5rem;
+    font-size: 2.5rem;
+    line-height: 1.2;
+    list-style: none;
+}
+
+/* Slides Mobile Nav Menu in from Right */
+.nav-menu.active {
+    right: 0;
+}
+
+.hamburger {
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 35px;
+    /* The following 2 properties are essential in creating the "X" when the hamburger is clicked. If you change just 1 of the 2, then you need to find the proper combination for the other one */
+    height: 3px;
+    margin: 6px auto;
+    /* -webkit-transition: all 300ms ease;  */
+    transition: all 300ms ease-in-out;
+    background-color: #ffffff;
+}
+
+.headerActive .nav-bar ul li a {
+    color: #000000;
+}
+
+.headerNav .nav-bar ul li a {
+    color: #ffffff;
+}
+
+.headerBlack .bar {
+    background-color: #000000;
+}
+
+.headerWhite .bar {
+    background-color: #ffffff;
+}
+
+.headerActive .bar {
+    background-color: #000000;
+}
+
+.headerNav .bar {
+    background-color: #ffffff;
+}
+
+.bar:hover {
+    opacity: 1.0;
+}
+
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0
+}
+
+.hamburger.active .bar:nth-child(1) {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.hamburger.active .bar:nth-child(3) {
+    -webkit-transform: rotate(-45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.mobile_social {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: calc(100vh);
+    padding-top: 2rem;
+    list-style-type: none;
+    justify-content: flex-end;
+    gap: .5rem;
+}
+
+.mobile_social img {
+    height: 2rem;
+    width: 2rem;
+}
+
+/*----------- NAV DESKTOP -----------*/
+@media screen and (min-width: 899px) {
+
+    .nav-bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+    }
+
+    .nav-menu {
+        position: static;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1.2rem;
+        width: auto;
+        background-color: transparent;
+        font-size: inherit;
+        font-weight: 100;
+        height: 100px;
+        padding: 0;
+        margin-right: -1.2rem;
+        /* counteracts the gap to the hidden social icons/links*/
+    }
+
+    .nav-item:hover {
+        border-bottom: solid 1.5px #087DE7;
+        /* Border-Top stops links from moving up */
+        border-top: solid 1px transparent;
+        transition: border-bottom .4s;
+    }
+
+    .nav-item:active {
+        border-bottom: solid 1.5px #087DE7;
+        /* Border-Top stops links from moving up */
+        border-top: solid 1px transparent;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .mobile_social {
+        display: none;
+    }
+}
+
+.nav-link:hover {
+    opacity: 1;
+    color: #087DE7;
+}
+
+.nav-link:active {
+    opacity: 1;
+    color: #087DE7;
+}
+
+/*--------------------------------
+----------- HEAD IMAGE -----------
+--------------------------------*/
+
+.leadimage {
+    position: relative;
+    text-align: center;
+    z-index: -99;
+}
+
+img.headimage {
+    width: 100%;
+    height: calc(70vh);
+    object-fit: cover;
+    object-position: 50% 80%;
+}
+
+img.headimage_half {
+    width: 100%;
+    height: calc(50vh);
+    object-fit: cover;
+    object-position: 85% 30%;
+}
+
+img.headImageRight {
+    width: 100%;
+    height: calc(70vh);
+    object-fit: cover;
+    object-position: 75% 100%;
+}
+
+
+.head_img_title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    text-align: center;
+}
+
+/* ---- DESKTOP HEAD IMAGE ---- */
+@media screen and (min-width: 900px) {
+
+    img.headimage {
+        object-position: 50% 50%;
+    }
+
+    img.headimage_half {
+        object-position: 85% 30%;
+    }
+
+    img.headImageRight {
+        object-position: 50% 100%;
+    }
+
+    .carouselCaption {
+        margin-left: 13%;
+    }
+}
+
+figure .feature_image {
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    width: 100%;
+    height: auto;
+}
+
+.svgScale {
+    width: 100%;
+    height: auto;
+    object-fit: fill;
+}
+
+/*------------------------------
+------- CAROUSEL HEADER --------
+------------------------------*/
+
+.carouselItems {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+
+.carouselItem {
+    position: relative;
+    min-width: 100%;
+    height: 100vh;
+    transition: all .6s linear;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.carouselCaption {
+    position: absolute;
+    text-align: left;
+    bottom: .5%;
+    margin-left: 1rem;
+    padding: 0.5rem 1rem;
+    color: #ffffff;
+    text-shadow: 2px 2px 6px #000000;
+    font-size: 1rem;
+}
+
+.item1 {
+    background-image: url("../../brand_portfolio/folio_images/thec/THEC_header.jpg");
+    background-position: bottom 40% right 50%;
+}
+
+.item2 {
+    background-image: url("../../brand_portfolio/folio_images/accurist/accurist_header.jpg");
+    background-position: bottom 10% right 12%;
+    background-attachment: fixed;
+}
+
+.item3 {
+    background-image: url("../../brand_portfolio/folio_images/racingpoint/rp_header_2.jpg");
+    background-position: bottom 40% right 27%;
+    background-attachment: fixed;
+}
+
+.item4 {
+    background-image: url("../../brand_portfolio/folio_images/kettle/kettle_mcro_chilli_split.jpg");
+    background-position: bottom 20% right 46%;
+    background-attachment: fixed;
+}
+
+.item5 {
+    background-image: url("../../brand_portfolio/folio_images/clarks/clarks_header2.jpg");
+    background-position: bottom 80% right 21%;
+    background-attachment: fixed;
+}
+
+/*------------------------------
+--------- SCROLL ARROW ---------
+------------------------------*/
+
+.scrollArrow {
+    position: relative;
+    left: 50%;
+    bottom: 5rem;
+    text-align: center;
+    align-items: center;
+    width: 28px;
+    height: 28px;
+}
+
+.arrow {
+    position: absolute;
+    width: 28px;
+    height: 2px;
+    opacity: 0;
+    transform: scale3d(0.5, 0.5, 0.5);
+    animation: move 3s ease-out infinite;
+}
+
+.arrow:first-child {
+    animation: move 3s ease-out 1s infinite;
+}
+
+.arrow:nth-child(2) {
+    animation: move 3s ease-out 2s infinite;
+}
+
+.arrow:before,
+.arrow:after {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 51%;
+    background: white;
+}
+
+.arrow:before {
+    left: 0;
+    transform: skew(0deg, 30deg);
+}
+
+.arrow:after {
+    right: 0;
+    width: 50%;
+    transform: skew(0deg, -30deg);
+}
+
+@keyframes move {
+    25% {
+        opacity: 1;
+
+    }
+
+    33% {
+        opacity: 1;
+        transform: translateY(30px);
+    }
+
+    67% {
+        opacity: 1;
+        transform: translateY(40px);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+    }
+}
+
+@keyframes pulse {
+    to {
+        opacity: 1;
+    }
+}
+
+/*------------------------------
+------------ MAIN -------------
+------------------------------*/
+
+main {
+    min-height: 600px;
+    /* Display Grid is Essential for the before / after images */
+    display: grid;
+    place-items: center;
+}
+
+section#sitemap,
+section#privacyPolicy {
+    padding: 8rem 2rem 0;
+    width: 80%;
+}
+
+/*------------------------------
+---- HOMEPAGE IMAGE OVERLAY ----
+------------------------------*/
+
+.homeFolio a:hover {
+    opacity: 1.0;
+}
+
+.homeFolio {
+    /* Thumbnail overlay effects*/
+    position: relative;
+    overflow: clip;
+}
+
+.homeFolio img {
+    width: 100%;
+    transition: all .3s ease-in-out;
+}
+
+.homeFolio img:hover {
+    transform: scale(1.1);
+}
+
+.homeOverlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+    margin-top: .5rem;
+    text-align: left;
+    /* Spaces image overlays vertically */
+}
+
+.homeFolio:hover .homeOverlay {
+    height: 6rem;
+}
+
+.homeTextOverlay {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    text-align: left;
+    color: #ffffff;
+}
+
+.homeTextOverlay h3,
+.homeTextOverlay p {
+    margin: 0;
+    text-align: left;
+}
+
+/*------ DESKTOP IMAGE OVERLAY -------*/
+@media screen and (min-width: 900px) {
+
+    .homeFolio:hover .homeOverlay {
+        height: 8rem;
+    }
+
+    .homeTextOverlay {
+        bottom: 1rem;
+        left: 2rem;
+    }
+}
+
+/*------------------------------
+-------- TEXT & COLUMNS --------
+------------------------------*/
+
+#pageIntro {
+    padding: 5rem 0;
+}
+
+.folioColumns {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+
+.folioColumns .left {
+    padding-left: 2rem;
+}
+
+.folioColumns .right {
+    padding-right: 2rem;
+}
+
+.folioColumns.withImg {
+    align-items: center;
+}
+
+.folioColumn img {
+    width: 100%;
+}
+
+/*------ MOBILE FOLIO COLUMNS -------*/
+@media screen and (max-width: 600px) {
+
+    /*----- Adds padding to text when single column ------*/
+    .folioColumns .left,
+    .folioColumns .right {
+        padding: 2rem 2rem;
+    }
+}
+
+/*------ TABLET FOLIO COLUMNS -------*/
+@media screen and (min-width: 601px) and (max-width: 900px) {
+
+    .folioColumn {
+        width: 49%;
+    }
+}
+
+/*------ DESKTOP FOLIO COLUMNS -------*/
+@media screen and (min-width: 900px) {
+
+    .folioColumns {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .folioColumn.left p,
+    .folioColumn.left h3,
+    .folioColumn.left h4,
+    .folioColumn.left h5,
+    .folioColumn.left blockquote {
+        padding-right: 10%;
+    }
+
+    .folioColumn.right p,
+    .folioColumn.right h3,
+    .folioColumn.right h4,
+    .folioColumn.right h5,
+    .folioColumn.right blockquote {
+        padding-left: 10%;
+    }
+
+    .folioColumn {
+        width: 49.5%;
+        text-align: left;
+    }
+}
+
+/*------ EXTRA LARGE DESKTOP FOLIO COLUMNS -------*/
+@media screen and (min-width: 900px) {
+
+    /*----- Remove L&R padding, additional padding to all elements added at bottom of CSS ------*/
+    .folioColumns .left {
+        padding-left: 0;
+    }
+
+    .folioColumns .right {
+        padding-right: 0;
+    }
+}
+
+.imgFlexGrid {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    margin-top: .2rem;
+    margin-bottom: .2rem;
+}
+
+.imgFlexGrid img {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    flex-grow: 1;
+}
+
+.imgFlexGrid.small img {
+    object-fit: cover;
+    width: 45%;
+    flex-grow: 1;
+}
+
+.imgFlexGrid.extraSmall img {
+    object-fit: cover;
+    width: 25%;
+    flex-grow: 1;
+}
+
+/*------ TABLET FLEXGRID FOLIO -------*/
+@media screen and (min-width: 601px) and (max-width: 900px) {
+
+    .imgFlexGrid img {
+        width: 50%;
+        flex-grow: 1;
+    }
+
+    .imgFlexGrid.small img {
+        width: 30%;
+        padding: 0;
+    }
+
+    .imgFlexGrid.extraSmall img {
+        object-fit: cover;
+        width: 25vw;
+        padding: 0;
+    }
+}
+
+/*------ DESKTOP FLEXGRID FOLIO -------*/
+@media screen and (min-width: 900px) {
+
+    .imgFlexGrid {
+        width: 100%;
+    }
+
+    .imgFlexGrid img {
+        width: 50%;
+    }
+
+    .imgFlexGrid.small img {
+        width: 33%;
+    }
+
+    .imgFlexGrid.extraSmall img {
+        width: 15%;
+    }
+}
+
+/*---------------------------
+------- IMAGE LAYOUT --------
+---------------------------*/
+
+.bodyWidthImg img {
+    /* contained within the body / main width (not full width for desktop viewport */
+    width: 100vw;
+    height: auto;
+    object-fit: fill;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.halfWidthImg {
+    /* Smaller images centered in the viewport */
+    width: 100%;
+    padding: .5rem;
+}
+
+.halfWidthImg img {
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+}
+
+/*------ DESKTOP IMAGE LAYOUT -------*/
+@media screen and (min-width: 900px) {
+
+    .halfWidthImg img {
+        width: 50%;
+    }
+}
+
+/*------------------------------
+-------- JUMP TO LINKS --------
+------------------------------*/
+
+.jumpTo {
+    margin-bottom: 2rem;
+}
+
+.jumpTo li {
+    display: flex;
+    flex-wrap: nowrap;
+    display: inline-block;
+    font-style: normal;
+    color: gray;
+    font-weight: 300;
+    border-bottom: #D3D3D3 solid .1rem;
+    border-left: #D3D3D3 solid .1rem;
+    border-right: #D3D3D3 solid .1rem;
+    border-radius: 0 0 .5rem .5rem;
+    padding: .3rem .5rem;
+    width: 6.5rem;
+    text-align: center;
+}
+
+.jumpTo li:hover {
+    color: #ffffff;
+    font-weight: 300;
+    transition: all .5s ease-in-out;
+    background-color: #087DE7;
+    border: #087DE7;
+    opacity: 1;
+}
+
+.jumpTo li a {
+    text-decoration: none;
+    font-size: .8em;
+}
+
+.jumpTo li a:hover {
+    text-decoration: none;
+    color: #ffffff;
+    opacity: 1;
+}
+
+/*------------------------------
+----------- AWARDS ------------
+------------------------------*/
+
+.awardsH5 {
+    font-size: 1rem;
+    text-align: center;
+    line-height: 2.5rem;
+    margin-bottom: 0;
+}
+
+.awardsp {
+    font-size: .8rem;
+    line-height: 1;
+    text-align: center;
+    margin-top: 0;
+}
+
+.projectAwards {
+    text-align: center;
+    margin-bottom: 2rem;
+    justify-content: space-between;
+}
+
+.projectAwards .awards .awardsNest {
+    padding: 0 .8rem;
+}
+
+.awardsContainer {
+    text-align: center;
+    padding: 2rem 1%;
+    background-color: #000000;
+    width: 110%;
+}
+
+.awards {
+    width: 100%;
+}
+
+.awardsContainer li {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+    align-items: baseline;
+    color: #ffffff;
+    text-align: center;
+    width: 10rem;
+}
+
+.awards li {
+    display: inline-block;
+    align-items: baseline;
+    list-style-type: none;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.awardsNest {
+    text-align: center;
+}
+
+.awardsNest li {
+    display: block;
+    padding: 0;
+}
+
+.awardLogo {
+    display: inline;
+}
+
+/* ----- TABLET AWARDS ----- */
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+
+    .projectAwards .awards .awardsNest {
+        padding: 0 1rem;
+    }
+
+    .awardsContainer {
+        padding: 2rem;
+        background-color: black;
+        width: 100%;
+    }
+
+    .awardsContainer li {
+        width: 10rem;
+    }
+
+    .awardsH5 {
+        font-size: 1rem;
+        text-align: center;
+        line-height: 2.5;
+        margin-bottom: 0;
+    }
+    
+    .awardsp {
+        font-size: .8rem;
+        line-height: 1;
+        text-align: center;
+        margin-top: 0;
+    }
+}
+
+/* ----- DESKTOP AWARDS ----- */
+
+@media screen and (min-width: 900px) {
+
+    .awardsContainer {
+        padding: 2rem;
+        width: 100%;
+        margin: 5em 0;
+    }
+
+    .awardsContainer li {
+        width: 15rem;
+    }
+
+    .awardsH5 {
+        font-size: 1.2rem;
+        text-align: center;
+        line-height: 2.5;
+        margin-bottom: 0;
+    }
+    
+    .awardsp {
+        font-size: 1rem;
+        line-height: 1;
+        text-align: center;
+        margin-top: 0;
+    }
+
+}
+
+/*------------------------------
+---------- CV MODAL ------------
+------------------------------*/
+
+.cvModalLink {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-align: left;
+}
+
+.cvModalLink:hover {
+    color: #087DE7;
+    transition: .5s ease;
+
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 100;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* #000000 w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #ffffff;
+    color: #000000;
+    margin: auto;
+    padding: 1rem;
+    width: 90%;
+}
+
+/* Modal Close Button */
+.closeBtn {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.closeBtn:hover,
+.closeBtn:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modalFlex {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding: 0 1rem;
+    gap: 1rem;
+}
+
+.modalColumnLeft {
+    min-width: 40%;
+}
+
+.modalColumnRight {
+    min-width: 70%;
+}
+
+.expirienceList li {
+    font-size: 1.2rem;
+    font-weight: 100;
+    line-height: 1.5;
+    margin-left: 40px;
+}
+
+.expirienceList {
+    font-size: .8rem;
+    list-style: circle;
+}
+
+.expirienceList ul li {
+    font-size: .8rem;
+}
+
+hr {
+    border-top: #000000 dashed 2px;
+}
+/* ----- SAMLL DESKTOP CV ----- */
+
+@media screen and (min-width: 900px) {
+
+    .modal-content {
+        width: 90%;
+    }
+
+    .modalColumnLeft {
+        max-width: 25%;
+        min-width: 25%;
+    }
+
+    .modalColumnRight {
+        max-width: 70%;
+        min-width: 70%;
+    }
+
+    .expirienceList {
+        font-size: 1rem;
+    }
+
+    .expirienceList li {
+        font-size: 1.2rem;
+        line-height: 1.6;
+    }
+}
+
+/* ----- LARGE DESKTOP CV ----- */
+
+@media screen and (min-width: 1500px) {
+
+    .modal-content {
+        width: 70%;
+    }
+
+    .expirienceList li {
+        font-size: 1.5rem;
+        line-height: 1.6;
+    }
+}
+
+/*------------------------------
+----- INSTA SCROLL GALLERY -----
+------------------------------*/
+
+.instaGallery {
+    overflow: auto;
+    white-space: nowrap;
+    margin-left: -1.1rem;
+    margin-right: -1.1rem;
+}
+
+.instaPhoto {
+    padding: .2rem;
+    height: auto;
+    width: 50%;
+    display: inline;
+}
+
+/* ----- DESKTOP INSTA GALLERY ----- */
+
+@media screen and (min-width: 900px) {
+
+    .instaGallery {
+        width: 100%;
+    }
+
+    .instaPhoto {
+        width: 30%;
+    }
+}
+
+/*------------------------------
+------- PORTFOLIO GRID ---------
+------------------------------*/
+
+#portfolioGrid {
+    display: grid;
+    grid-template: repeat(6, auto) / repeat(2, auto);
+    gap: 1rem;
+    padding: 0 1rem;
+    grid-auto-flow: row;
+    justify-content: center;
+}
+
+.gridItem {
+    display: block;
+    height: 100%;
+    Width: 100%;
+}
+
+.gridItem a:hover {
+    opacity: 1.0;
+}
+
+.foliothumb {
+    /* Thumbnail overlay effects*/
+    position: relative;
+}
+
+.folio_overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000000;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+    margin-top: .5rem;
+    /* Spaces image overlays vertically */
+}
+
+.foliothumb:hover .folio_overlay {
+    height: 100%;
+}
+
+.foliotextoverlay {
+    font-size: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff;
+}
+
+.foliotextoverlay h4 {
+    margin: 0;
+    text-align: center;
+    line-height: 1.6;
+}
+
+p.folioDescribe {
+    margin: 0;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.1;
+}
+
+@media screen and (min-width: 601px) and (max-width: 899px) {
+
+    #portfolioGrid {
+        grid-template: repeat(6, auto) / repeat(3, auto);
+        gap: 1rem;
+        padding: 0 1rem;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+
+    #portfolioGrid {
+        grid-template: repeat(6, auto) / repeat(4, 1fr);
+        gap: 1rem;
+        padding: 1;
+    }
+
+    .foliotextoverlay h4 {
+        font-size: 1.5rem;
+    }
+
+}
+
+/*---------------------------
+--- BEFORE / AFTER SLIDER ---
+---------------------------*/
+
+.b4AftContainer {
+    display: grid;
+    place-content: center;
+    position: relative;
+    overflow: hidden;
+    --position: 50%;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+.b4AftImgContainer {
+    max-width: 1500px;
+    max-height: 90vh;
+}
+
+.sliderImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
+}
+
+.beforeImg {
+    position: absolute;
+    inset: 0;
+    width: var(--position);
+}
+
+.slider {
+    position: absolute;
+    inset: 0;
+    cursor: pointer;
+    opacity: 0;
+    /* for FireFox */
+    width: 100%;
+    height: 100%;
+}
+
+.slider:focus-visible~.sliderButton {
+    outline: 5px solid #000000;
+    outline-offset: 3px;
+}
+
+.sliderLine {
+    position: absolute;
+    inset: 0;
+    width: .18rem;
+    height: 100%;
+    background-color: #ffffff;
+    z-index: 2;
+    left: var(--position);
+    transform: translateX(-50%);
+    pointer-events: none;
+    box-shadow: 1px 1px 5px hsl(0, 50%, 2%, .5);
+}
+
+.sliderButton {
+    position: absolute;
+    padding: 0;
+    border-radius: 100vw;
+    display: grid;
+    place-items: center;
+    top: 50%;
+    left: var(--position);
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 2;
+    box-shadow: 1px 1px 5px hsl(0, 50%, 2%, .5);
+}
+
+/* DESKTOP BEFORE AND AFTER */
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+
+    .b4AftContainer {
+        margin-top: 3rem;
+        margin-bottom: 5rem;
+    }
+}
+
+/*------------------------------
+-------- FOLIO CAROUSEL --------
+------------------------------*/
+
+.folioCarousel {
+    overflow: auto;
+    white-space: nowrap;
+    padding: 5px;
+}
+
+.folioCarouselImg {
+    padding: .5%;
+    height: auto;
+    width: 50%;
+    display: inline;
+}
+
+/*------------------------------
+--------- FOLIO VIDEOS ---------
+------------------------------*/
+
+video {
+    margin: 1rem 0;
+}
+
+.iframeContainer {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 56.25%;
+    /* 16:9 Aspect Ratio */
+}
+
+.responsiveIframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #D3D3D3;
+}
+
+
+#folioVideo {
+    width: 100%;
+}
+
+/*---------------------------
+---- TWO COLUMN LAYOUT ----
+---------------------------*/
+
+.twoColumns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+.twoColumns.textOnly {
+    margin: 4rem 0;
+    align-content: center;
+}
+
+/* TABLET TWO COLUMN LAYOUT */
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+
+    .twoColumns {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        gap: 4rem;
+    }
+
+    .twoColumnLeft {
+        width: 45%;
+        text-align: left;
+    }
+
+    .twoColumnRight {
+        width: 45%;
+        text-align: left;
+    }
+}
+
+/* DESKTOP TWO COLUMN LAYOUT */
+
+@media screen and (min-width: 900px) {
+
+    .twoColumns {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0 2rem;
+        gap: 4rem;
+    }
+
+    .twoColumnLeft {
+        width: 45%;
+        text-align: left;
+    }
+
+    .twoColumnRight {
+        width: 45%;
+        text-align: left;
+    }
+}
+
+/* LARGE DESKTOP TWO COLUMN LAYOUT */
+
+@media screen and (min-width: 1500px) {
+
+    .twoColumns {
+        padding: 0;
+    }
+}
+
+/*---------------------------
+---- THREE COLUMN LAYOUT ----
+---------------------------*/
+
+.threeColumns {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2rem;
+}
+
+.threeColumnLeft,
+.threeColumnCenter,
+.threeColumnRight {
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+ul.sitemapList {
+    display: block;
+    list-style-type: disc;
+    padding-inline-start: 20px;
+    width: 100%;
+}
+
+.sitemapList li {
+    padding: 4px;
+}
+
+/* DESKTOP THREE COLUMN LAYOUT */
+@media screen and (min-width: 900px) {
+
+    .threeColumns {
+        padding: 0;
+    }
+
+    .threeColumnLeft,
+    .threeColumnCenter,
+    .threeColumnRight {
+        width: 33%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        text-align: left;
+    }
+}
+
+
+/*---------------------------
+------- CONTACT FORM --------
+---------------------------*/
+
+.contactroundels {
+    text-align: center;
+}
+
+.contactroundels li {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+    padding: 0 .5rem;
+}
+
+.contactroundels li img {
+    height: 3rem;
+    width: 3rem;
+    cursor: pointer;
+}
+
+.contactroundels li:hover {
+    transition: all .4s;
+    opacity: 0.5;
+}
+
+.contactroundels li:active {
+    opacity: 0.9;
+}
+
+.contact_form {
+    display: block;
+    width: 100%;
+    padding: 0 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.flex_field {
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form div span {
+    padding: .5rem;
+}
+
+.two_fields {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact_form div {
+    width: 100%;
+}
+
+.contact_form div span input {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: solid #D3D3D3 .1rem;
+    background-color: #D3D3D3;
+}
+
+.contact_form div span textarea {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: solid #D3D3D3 .1rem;
+    background-color: #D3D3D3;
+}
+
+.contact_form div span select {
+    width: 100%;
+    min-height: 2rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: solid #D3D3D3 .1rem;
+    background-color: #D3D3D3;
+}
+
+#submit {
+    width: 15rem;
+    margin: 1rem;
+    background-color: #000000;
+    border: #000000 solid .1rem;
+    color: #ffffff;
+    transition: all .4s;
+    cursor: pointer;
+}
+
+#submit:visited {
+    background-color: #000000;
+    border: #000000 solid .1rem;
+    color: #ffffff;
+}
+
+#submit:hover,
+#submit:focus {
+    background-color: #ffffff;
+    color: #000000;
+    border: #000000 solid .1rem;
+}
+
+#submit:active {
+    background-color: #ffffff;
+    color: #087DE7;
+    border: #087DE7 solid .1rem;
+}
+
+.contact_form .fa {
+    position: relative;
+    float: inline-end;
+    top: 33px;
+    right: 20px;
+    color: #000000;
+    font-size: 1.2rem;
+}
+
+/*------ TABLET & DESKTOP CONTACT FORM  ------*/
+
+@media screen and (min-width: 601px) {
+
+    .contact_form {
+        display: block;
+        width: 80%;
+    }
+
+    .contactroundels li img {
+        height: 4rem;
+        width: 4rem;
+    }
+
+    .two_fields {
+        flex-wrap: nowrap;
+    }
+}
+
+/*------------------------------
+---------- GOOGLE MAP ----------
+------------------------------*/
+
+iframe.map {
+    width: 100%;
+    height: 500px;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    filter: grayscale(100%) invert(90%);
+    display: block;
+}
+
+/*------------------------------
+--------- PAGE FOOTNOTE --------
+------------------------------*/
+
+#pageFootnote {
+    padding: 5rem 2rem;
+}
+
+/*-------------------------------
+---- TOOLS & CREATIVE FIELDS ----
+-------------------------------*/
+
+.projectTools ul {
+    text-align: center;
+    position: relative;
+    place-items: center;
+    padding-bottom: .2rem;
+}
+
+.projectTools ul li {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: .2rem auto;
+    padding: .2rem 0;
+    display: inline-block;
+    font-style: normal;
+    width: 10em;
+    border-radius: 1rem;
+    border: solid .1rem #000000;
+    font-size: .6rem;
+}
+
+/* DESKTOP PROJECT TOOLS */
+@media screen and (min-width: 900px) {
+
+    .projectTools {
+        padding: 1rem;
+    }
+
+    .projectTools ul {
+        padding: .2rem;
+    }
+
+    .projectTools ul li {
+        font-size: .8rem;
+    }
+
+    p.credits {
+        font-size: .8rem;
+        line-height: 20px;
+    }
+}
+
+/*------------------------------
+------- RELATED PROJECTS -------
+------------------------------*/
+
+.relatedProjects {
+    background-color: #D3D3D3;
+    padding: 1.5rem 1rem 2rem 1rem;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.relatedProjects a:hover {
+    opacity: 1;
+}
+
+.relatedImg {
+    /* Thumbnail overlay effects*/
+    position: relative;
+    overflow: clip;
+}
+
+.relatedImg img {
+    width: 100%;
+    transition: all .3s ease-in-out;
+}
+
+.relatedImg img:hover {
+    transform: scale(1.2);
+}
+
+.relatedLinks {
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding-top: 1rem;
+    justify-content: space-between;
+}
+
+.relatedImg {
+    width: 32.5%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.relatedImg a img {
+    object-fit: contain;
+}
+
+/*------ FOOTER SMALL DESKTOP ------*/
+
+@media screen and (min-width: 900px) {
+
+    .relatedProjects {
+        padding: 1.5rem 1.5rem 4rem 1.5rem;
+    }
+
+    .relatedLinks {
+        display: flex;
+        width: 100%;
+        height: auto;
+        justify-content: space-between;
+    }
+
+    .relatedImg {
+        width: 32.5%;
+    }
+}
+
+/*------------------------------
+------------ FOOTER ------------
+------------------------------*/
+
+footer {
+    display: flex;
+    width: 100%;
+    min-height: 150px;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 1rem;
+    font-weight: 100;
+    background-color: #000000;
+    font-size: 0.9rem;
+    color: #ffffff;
+}
+
+.footer_left {
+    width: 100%;
+    text-align: center;
+}
+
+.social_links {
+    display: none;
+}
+
+.footer_right {
+    text-align: center;
+    width: 100%;
+}
+
+.footer_right li {
+    display: inline-block;
+    padding: 0 1rem 0 0;
+}
+
+.footer_right li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer_right li a:hover {
+    transition: all .4s;
+    color: #087DE7;
+}
+
+/*------ FOOTER TABLET ------*/
+
+@media screen and (min-width: 600px) and (max-width: 899px) {
+
+    .footer_left {
+        text-align: left;
+        width: 45%;
+    }
+
+    .social_links {
+        display: none;
+    }
+
+    .footer_right {
+        width: 45%;
+        text-align: right;
+    }
+
+    .footer_right li a {
+        padding: 0 0 0 1rem;
+    }
+
+
+}
+
+/*------ FOOTER SMALL DESKTOP ------*/
+
+@media screen and (min-width: 900px) {
+
+    .footer_left {
+        text-align: left;
+        width: 35%;
+    }
+
+    .social_links {
+        display: inline-block;
+        text-align: center;
+        width: 20%;
+    }
+
+    .social_links ul li {
+        height: 1.5rem;
+        width: 1.5rem;
+        margin: 0 .1rem;
+        font-size: 1.4rem;
+        display: inline-block;
+    }
+
+    .social_links li a:hover {
+        transition: all .4s;
+        opacity: 0.5;
+    }
+
+    .footer_right {
+        width: 35%;
+        text-align: right;
+    }
+
+    .footer_right li a {
+        padding: 0 0 0 1rem;
+    }
+}
+
+
+
+
+/*---------------------------------------------------
+---------- PADDING FOR EXTRA LARGE SCREENS ----------
+- Must come last to overide previsous general styles -
+---------------------------------------------------*/
+
+@media screen and (min-width: 1500px) {
+
+    header,
+    main,
+    footer {
+        padding: 0 15%;
+    }
+
+    .relatedProjects {
+        padding: 1.5rem 15% 4rem 15%;
+    }
+
+    /*-------- ADJUSTMENTS FOR EXTRA PADDING ---------*/
+
+    .awardsContainer {
+        width: 145%;
+    }
+
+    .instaGallery {
+        width: 145%;
+
+    }
+
+    .instaPhoto {
+        width: 25%;
+    }
+}
