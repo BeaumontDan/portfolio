@@ -17,15 +17,11 @@ This is a personal portfolio training/learning project, set by [Codecademy][code
 
 ### Features
 
-If your project has multiple features, list them here. Don’t be afraid
-to brag if your project has unique features that make it stand out. You can
-even add screenshots and gifs to show off the features.
+tbc
 
 ### How to use
 
-Here, you should write step-by-step instructions on how to
-install and use your project. Any software or package requirements should
-also be listed here.
+tbc
 
 ### Collaborators & Credits
 
@@ -40,8 +36,7 @@ also be listed here.
 
 ### License
 
-It’s also important to list a license on your README so other
-developers can understand what they can and cannot do
+tbc
 
 [codecademy]: https://www.codecademy.com/
 [course]: https://www.codecademy.com/learn/paths/full-stack-engineer-career-path
