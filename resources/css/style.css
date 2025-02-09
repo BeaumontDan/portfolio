@@ -1996,7 +1996,8 @@ form div span {
     background-color: #D3D3D3;
 }
 
-#submit {
+#submit,
+#reset {
     width: 15rem;
     margin: 1rem;
     background-color: #000000;
@@ -2006,20 +2007,24 @@ form div span {
     cursor: pointer;
 }
 
-#submit:visited {
+#submit:visited,
+#reset:visited {
     background-color: #000000;
     border: #000000 solid .1rem;
     color: #ffffff;
 }
 
 #submit:hover,
-#submit:focus {
+#submit:focus,
+#reset:hover,
+#reset:focus  {
     background-color: #ffffff;
     color: #000000;
     border: #000000 solid .1rem;
 }
 
-#submit:active {
+#submit:active,
+#sreset:active {
     background-color: #ffffff;
     color: #087DE7;
     border: #087DE7 solid .1rem;
