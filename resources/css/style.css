@@ -173,7 +173,7 @@ p.caption {
 
 p a,
 p a:visited {
-    color: #087DE7;
+    color: #00ABBF;
 }
 
 p a:hover,
@@ -194,7 +194,7 @@ a.sitemapLink:visited {
 }
 
 a.sitemapLink:hover {
-    color: #087DE7;
+    color: #00ABBF;
 }
 
 blockquote {
@@ -678,14 +678,14 @@ header.headerNav .logo {
     }
 
     .nav-item:hover {
-        border-bottom: solid 1.5px #087DE7;
+        border-bottom: solid 1.5px #00ABBF;
         /* Border-Top stops links from moving up */
         border-top: solid 1px transparent;
         transition: border-bottom .4s;
     }
 
     .nav-item:active {
-        border-bottom: solid 1.5px #087DE7;
+        border-bottom: solid 1.5px #00ABBF;
         /* Border-Top stops links from moving up */
         border-top: solid 1px transparent;
     }
@@ -701,12 +701,12 @@ header.headerNav .logo {
 
 .nav-link:hover {
     opacity: 1;
-    color: #087DE7;
+    color: #00ABBF;
 }
 
 .nav-link:active {
     opacity: 1;
-    color: #087DE7;
+    color: #00ABBF;
 }
 
 /*--------------------------------
@@ -1231,8 +1231,8 @@ section#privacyPolicy {
     color: #ffffff;
     font-weight: 300;
     transition: all .5s ease-in-out;
-    background-color: #087DE7;
-    border: #087DE7;
+    background-color: #00ABBF;
+    border: #00ABBF;
     opacity: 1;
 }
 
@@ -1398,7 +1398,7 @@ section#privacyPolicy {
 }
 
 .cvModalLink:hover {
-    color: #087DE7;
+    color: #00ABBF;
     transition: .5s ease;
 
 }
@@ -2026,8 +2026,8 @@ form div span {
 #submit:active,
 #sreset:active {
     background-color: #ffffff;
-    color: #087DE7;
-    border: #087DE7 solid .1rem;
+    color: #00ABBF;
+    border: #00ABBF solid .1rem;
 }
 
 .contact_form .fa {
@@ -2237,7 +2237,7 @@ footer {
 
 .footer_right li a:hover {
     transition: all .4s;
-    color: #087DE7;
+    color: #00ABBF;
 }
 
 /*------ FOOTER TABLET ------*/
