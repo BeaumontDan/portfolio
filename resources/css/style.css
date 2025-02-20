@@ -2173,7 +2173,7 @@ iframe.map {
     object-fit: contain;
 }
 
-/*------ FOOTER SMALL DESKTOP ------*/
+/*------ RELATED PROJECTS SMALL DESKTOP ------*/
 
 @media screen and (min-width: 900px) {
 
@@ -2206,9 +2206,9 @@ footer {
     align-items: center;
     padding: 2rem 1rem;
     font-weight: 100;
-    background-color: #000000;
+    background-color: #E2E3E6;
     font-size: 0.9rem;
-    color: #ffffff;
+    color: #000000;
 }
 
 .footer_left {
@@ -2231,7 +2231,7 @@ footer {
 }
 
 .footer_right li a {
-    color: #ffffff;
+    color: #000000;
     text-decoration: none;
 }
 
