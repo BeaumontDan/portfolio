@@ -44,6 +44,10 @@ a {
     color: inherit;
 }
 
+::placeholder {
+    color: #000000;
+}
+
 a:visited {
     display: none;
 }
@@ -2131,7 +2135,7 @@ iframe.map {
 ------------------------------*/
 
 .relatedProjects {
-    background-color: #D3D3D3;
+    background-color: #f1f1f1;
     padding: 1.5rem 1rem 2rem 1rem;
     width: 100%;
     justify-content: space-between;
