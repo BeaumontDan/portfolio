@@ -102,34 +102,11 @@ button.animatedLink {
       margin: 0;
       width: 3rem;
       height: 3rem;
+      padding: .9rem 0 0 1.2rem;
       background: #1F3651;
       border-radius: 1.625rem;
-      .arrowIcon {
-        transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        margin: auto;
-        background: #ffffff;
-        &.linkArrow {
-          transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-          left: 0.625rem;
-          width: 1.125rem;
-          height: 0.125rem;
-          background: none;
-          &::before {
-            position: absolute;
-            content: '';
-            top: -0.25rem;
-            right: 0.0625rem;
-            width: 0.625rem;
-            height: 0.625rem;
-            border-top: 0.125rem solid #ffffff;
-            border-right: 0.125rem solid #ffffff;
-            transform: rotate(45deg);
-          }
-        }
-      }
+      color: #ffffff;
+      text-align: left;
     }
     .button-text {
       transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
@@ -151,12 +128,6 @@ button.animatedLink {
   &:hover {
     .circleIcon {
       width: 100%;
-      .arrowIcon {
-        &.linkAarrow {
-        background: #ffffff;
-        transform: translate(1rem, 0);
-        }
-      }
     }
     .button-text {
       color: #ffffff;
@@ -2022,11 +1993,6 @@ ul.sitemapList {
     height: 3rem;
     width: 3rem;
     cursor: pointer;
-}
-
-.contactroundels li:hover {
-    transition: all .4s;
-    opacity: 0.5;
 }
 
 .contactroundels li:active {
