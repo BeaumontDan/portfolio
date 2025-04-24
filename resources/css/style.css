@@ -45,6 +45,7 @@ a {
 }
 
 ::placeholder {
+    font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
     color: #1F3651;
 }
 
@@ -156,6 +157,7 @@ h5,
 h6 {
     font-family: "Antonio", Tahoma, sans-serif;
     font-style: normal;
+    color: #1F3651;
 }
 
 h2 {
@@ -212,6 +214,7 @@ p {
     margin-bottom: 1.5rem;
     margin-top: 1.5rem;
     text-align: left;
+    color: #1F3651;
 }
 
 p.firstPara {
@@ -525,15 +528,15 @@ header a {
     letter-spacing: 1px;
 }
 
-.logo:hover {
-    transition: all .4s;
-    opacity: 0.5;
-}
-
 .headerBlack .logo {
     /* Black Text and Logo for Lighter Backgrounds */
     background-image: url("/resources/images/db_logo_black.svg");
     color: transparent;
+}
+
+.headerBlack .logo:hover {
+    transition: all .4s;
+    background-image: url("/resources/images/db_logo_green.svg");
 }
 
 .headerWhite .logo {
@@ -542,15 +545,25 @@ header a {
     color: transparent;
 }
 
+.headerWhite .logo:hover {
+    transition: all .4s;
+    background-image: url("/resources/images/db_logo_green.svg");
+}
+
 .headerNav .logo {
     background-image: url("/resources/images/db_logo_white.svg");
     /* #1F3651 DB logo for lighter header images*/
+    color: transparent;
+}
+
+.headerNav .logo:hover {
+    transition: all .4s;
+    background-image: url("/resources/images/db_logo_green.svg");
 }
 
 .headerActive {
     /* Switches header / nav bar Text to black on scroll*/
     background-color: #ffffff;
-    color: transparent;
 }
 
 .headerActive .logo {
@@ -565,7 +578,6 @@ header.headerNav {
 
 header.headerNav .logo {
     background-image: url("/resources/images/db_logo_white.svg");
-    color: transparent;
 }
 
 /*----------- HEADER DESKTOP -----------*/
@@ -654,7 +666,6 @@ header.headerNav .logo {
     margin: 6px auto;
     /* -webkit-transition: all 300ms ease;  */
     transition: all 300ms ease-in-out;
-    background-color: #ffffff;
 }
 
 .headerActive .nav-bar ul li a {
@@ -669,20 +680,32 @@ header.headerNav .logo {
     background-color: #1F3651;
 }
 
+.headerBlack .hamburger:hover * {
+    background-color: #34B776;
+}
+
 .headerWhite .bar {
     background-color: #ffffff;
+}
+
+.headerWhite .hamburger:hover * {
+    background-color: #34B776;
 }
 
 .headerActive .bar {
     background-color: #1F3651;
 }
 
+.headerActive .hamburger:hover * {
+    background-color: #34B776;
+}
+
 .headerNav .bar {
     background-color: #ffffff;
 }
 
-.bar:hover {
-    opacity: 1.0;
+.headerNav .hamburger:hover * {
+    background-color: #34B776;
 }
 
 .hamburger.active .bar:nth-child(2) {
@@ -743,15 +766,6 @@ header.headerNav .logo {
 
     .nav-item:hover {
         border-bottom: solid 1.5px #34B776;
-        /* Border-Top stops links from moving up */
-        border-top: solid 1px transparent;
-        transition: border-bottom .4s;
-    }
-
-    .nav-item:active {
-        border-bottom: solid 1.5px #34B776;
-        /* Border-Top stops links from moving up */
-        border-top: solid 1px transparent;
     }
 
     .hamburger {
@@ -763,7 +777,7 @@ header.headerNav .logo {
     }
 }
 
-.nav-link:hover {
+.nav-item .nav-link:hover {
     opacity: 1;
     color: #34B776;
 }
@@ -880,8 +894,8 @@ figure .feature_image {
 }
 
 .item1 {
-    background-image: url("../../brand_portfolio/folio_images/thec/THEC_header.jpg");
-    background-position: bottom 40% right 50%;
+    background-image: url("../../brand_portfolio/folio_images/extreme/extreme_header.jpg");
+    background-position: bottom 40% right 45%;
 }
 
 .item2 {
@@ -897,14 +911,14 @@ figure .feature_image {
 }
 
 .item4 {
-    background-image: url("../../brand_portfolio/folio_images/kettle/kettle_mcro_chilli_split.jpg");
-    background-position: bottom 20% right 46%;
+    background-image: url("../../brand_portfolio/folio_images/maxibon/maxibon_header.jpg");
+    background-position: bottom 20% right 65%;
     background-attachment: fixed;
 }
 
 .item5 {
-    background-image: url("../../brand_portfolio/folio_images/clarks/clarks_header2.jpg");
-    background-position: bottom 80% right 21%;
+    background-image: url("../../brand_portfolio/folio_images/nuii/nuii_hero_pack_editorial.jpg");
+    background-position: bottom 80% right 25%;
     background-attachment: fixed;
 }
 
@@ -1268,62 +1282,20 @@ section#privacyPolicy {
 }
 
 /*------------------------------
--------- JUMP TO LINKS --------
-------------------------------*/
-
-.jumpTo {
-    margin-bottom: 2rem;
-}
-
-.jumpTo li {
-    display: flex;
-    flex-wrap: nowrap;
-    display: inline-block;
-    font-style: normal;
-    color: gray;
-    font-weight: 300;
-    border-bottom: #D3D3D3 solid .1rem;
-    border-left: #D3D3D3 solid .1rem;
-    border-right: #D3D3D3 solid .1rem;
-    border-radius: 0 0 .5rem .5rem;
-    padding: .3rem .5rem;
-    width: 6.5rem;
-    text-align: center;
-}
-
-.jumpTo li:hover {
-    color: #ffffff;
-    font-weight: 300;
-    transition: all .5s ease-in-out;
-    background-color: #34B776;
-    border: #34B776;
-    opacity: 1;
-}
-
-.jumpTo li a {
-    text-decoration: none;
-    font-size: .8em;
-}
-
-.jumpTo li a:hover {
-    text-decoration: none;
-    color: #ffffff;
-    opacity: 1;
-}
-
-/*------------------------------
 ----------- AWARDS ------------
 ------------------------------*/
 
-.awardsH5 {
-    font-size: 1rem;
+.awardsHeading {
+    font-family: "Antonio", Tahoma, sans-serif;
+    font-size: 1.2rem;
     text-align: center;
     line-height: 2.5rem;
     margin-bottom: 0;
 }
 
-.awardsp {
-    font-size: .8rem;
+.awardsSubHead {
+    font-size: 1rem;
+    font-weight: 100;
     line-height: 1;
     text-align: center;
     margin-top: 0;
@@ -1333,6 +1305,7 @@ section#privacyPolicy {
     text-align: center;
     margin-bottom: 2rem;
     justify-content: space-between;
+    color: #1F3651;
 }
 
 .projectAwards .awards .awardsNest {
@@ -1344,6 +1317,7 @@ section#privacyPolicy {
     padding: 2rem 1%;
     background-color: #1F3651;
     width: 110%;
+    color: #ffffff;
 }
 
 .awards {
@@ -2034,16 +2008,16 @@ form div span {
     width: 100%;
     padding: 1rem;
     border-radius: 1rem;
-    border: solid #D3D3D3 .1rem;
-    background-color: #D3D3D3;
+    border: solid #e6e6e6 .1rem;
+    background-color: #e6e6e6;
 }
 
 .contact_form div span textarea {
     width: 100%;
     padding: 1rem;
     border-radius: 1rem;
-    border: solid #D3D3D3 .1rem;
-    background-color: #D3D3D3;
+    border: solid #e6e6e6 .1rem;
+    background-color: #e6e6e6;
 }
 
 .contact_form div span select {
@@ -2051,8 +2025,8 @@ form div span {
     min-height: 2rem;
     padding: 1rem;
     border-radius: 1rem;
-    border: solid #D3D3D3 .1rem;
-    background-color: #D3D3D3;
+    border: solid #e6e6e6 .1rem;
+    background-color: #e6e6e6;
 }
 
 #submit,
@@ -2077,9 +2051,9 @@ form div span {
 #submit:focus,
 #reset:hover,
 #reset:focus  {
-    background-color: #ffffff;
-    color: #1F3651;
-    border: #1F3651 solid .1rem;
+    background-color: #34B776;
+    color: #ffffff;
+    border: #34B776 solid .1rem;
 }
 
 #submit:active,
