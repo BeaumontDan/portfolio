@@ -10,7 +10,7 @@
     <title>OOPS! - ERROR 404 - Page Not Found</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- ICONS -->
     <link rel="icon" type="image/png" sizes="16x16" href="./resources/images/favicon/favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./resources/images/favicon/favicon-32x32.png">
@@ -18,6 +18,9 @@
     <link rel="icon" type="image/png" sizes="167x167" href="./resources/images/favicon/favicon-167x167.png">
     <link rel="icon" type="image/png" sizes="180x180" href="./resources/images/favicon/favicon-180x180.png">
     <link rel="icon" type="image/png" sizes="192x192" href="./resources/images/favicon/favicon-192x192.png">
+
+    <!-- SOURECED STYLE SHEETS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- STYLE SHEETS -->
     <link rel="stylesheet" href="./resources/css/reset.css">
@@ -40,7 +43,7 @@
 
 <body>
 
-    <header class="header headerWhite">
+    <header class="header headerBlack">
         <a href="./index.html"><span class="logo">Dan Beaumont</span></a>
 
         <nav class="nav-bar">
@@ -80,12 +83,24 @@
 
     </header>
 
-    <main>
-        <section>
-            <h1>404</h1>
-            <h2>Error! Page Not Found!</h2>
-        </section>
-    </main>
+    <!-- LEAD IMAGE / CAROUSEL -->
+    <figure class="leadimage">
+        <img class="headimage" src="./resources/images/about_me_portrait.jpg" alt="Dan Beaumont Portrait">
+        <div class="head_img_title">
+            <h1 style="color: #1F3651;">Oh Crumbs!</h1>
+            <p class="centerPara">We can&apos;t find the page you're looking for.</p>
+            <a href="index.html" title="Back to homepage" target="_blank">
+                <div class="linkWrap">
+                    <button class="animatedLink circleArrow">
+                        <span style="padding-left: 1.06rem; padding-top: .8rem" class="circleIcon" aria-hidden="true">
+                            <i class="fa fa-home" aria-hidden="true"></i>
+                        </span>
+                        <span class="button-text">BACK TO HOMEPAGE</span>
+                    </button>
+                </div>
+            </a>
+        </div>
+    </figure>
 
     <footer>
         <span class="footer_left">&copy; Dan Beaumont
