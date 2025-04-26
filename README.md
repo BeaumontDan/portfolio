@@ -17,7 +17,7 @@ This is a personal portfolio training/learning project, set by [Codecademy][code
 
 ### Features
 
-tbc
+- JavaScript Before & After image slider 
 
 ### How to use
 
