@@ -2108,7 +2108,7 @@ iframe.map {
     border: 0;
     padding: 0;
     margin: 0;
-    filter: grayscale(100%) invert(90%);
+    filter: grayscale(100%) invert(10%);
     display: block;
 }
 
