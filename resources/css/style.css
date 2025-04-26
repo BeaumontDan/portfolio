@@ -82,58 +82,63 @@ a:hover {
 ---------------------------------*/
 
 button.animatedLink {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-  outline: none;
-  border: 0;
-  vertical-align: middle;
-  text-decoration: none;
-  background: transparent;
-  padding: 0;
-  font-size: inherit;
-  font-family: inherit;
-  &.circleArrow {
-    width: 16rem;
-    height: auto;
-    .circleIcon {
-      transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-      position: relative;
-      display: block;
-      margin: 0;
-      width: 3rem;
-      height: 3rem;
-      padding: .9rem 0 0 1.2rem;
-      background: #1F3651;
-      border-radius: 1.625rem;
-      color: #ffffff;
-      text-align: left;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+
+    &.circleArrow {
+        width: 16rem;
+        height: auto;
+
+        .circleIcon {
+            transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+            position: relative;
+            display: block;
+            margin: 0;
+            width: 3rem;
+            height: 3rem;
+            padding: .9rem 0 0 1.2rem;
+            background: #1F3651;
+            border-radius: 1.625rem;
+            color: #ffffff;
+            text-align: left;
+        }
+
+        .button-text {
+            transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            padding: 0.75rem 0 0.75rem 1.5rem;
+            margin: 0 0 0 1.85rem;
+            color: #1F3651;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 1.6;
+            text-align: left;
+            text-transform: uppercase;
+        }
     }
-    .button-text {
-      transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      padding: 0.75rem 0 0.75rem 1.5rem;
-      margin: 0 0 0 1.85rem;
-      color: #1F3651;
-      font-size: 16px;
-      font-weight: 700;
-      line-height: 1.6;
-      text-align: left;
-      text-transform: uppercase;
+
+    &:hover {
+        .circleIcon {
+            width: 100%;
+        }
+
+        .button-text {
+            color: #ffffff;
+        }
     }
-  }
-  &:hover {
-    .circleIcon {
-      width: 100%;
-    }
-    .button-text {
-      color: #ffffff;
-    }
-  }
 }
 
 
@@ -240,8 +245,10 @@ p.caption {
 }
 
 .highlighted {
- color:#34B776;
-} /* Inline highlighted text*/
+    color: #34B776;
+}
+
+/* Inline highlighted text*/
 
 p a,
 p a:visited {
@@ -1106,14 +1113,6 @@ section#privacyPolicy {
     margin: 1rem 0;
 }
 
-.folioColumns .left {
-    padding-left: 2rem;
-}
-
-.folioColumns .right {
-    padding-right: 2rem;
-}
-
 .folioColumns.withImg {
     align-items: center;
 }
@@ -1122,14 +1121,10 @@ section#privacyPolicy {
     width: 100%;
 }
 
-/*------ MOBILE FOLIO COLUMNS -------*/
-@media screen and (max-width: 600px) {
-
-    /*----- Adds padding to text when single column ------*/
-    .folioColumns .left,
-    .folioColumns .right {
-        padding: 2rem 2rem;
-    }
+/*----- Adds padding to text for small screens ------*/
+.folioColumn.left,
+.folioColumn.right {
+    padding: 1rem;
 }
 
 /*------ TABLET FOLIO COLUMNS -------*/
@@ -1171,14 +1166,14 @@ section#privacyPolicy {
 }
 
 /*------ EXTRA LARGE DESKTOP FOLIO COLUMNS -------*/
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1500px) {
 
     /*----- Remove L&R padding, additional padding to all elements added at bottom of CSS ------*/
-    .folioColumns .left {
+    .folioColumn.left {
         padding-left: 0;
     }
 
-    .folioColumns .right {
+    .folioColumn.right {
         padding-right: 0;
     }
 }
@@ -1259,8 +1254,8 @@ section#privacyPolicy {
     width: 100vw;
     height: auto;
     object-fit: fill;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
 }
 
 .halfWidthImg {
@@ -1282,6 +1277,11 @@ section#privacyPolicy {
 
     .halfWidthImg img {
         width: 50%;
+    }
+
+    .bodyWidthImg img {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
     }
 }
 
@@ -1385,7 +1385,7 @@ section#privacyPolicy {
         line-height: 2.5;
         margin-bottom: 0;
     }
-    
+
     .awardsSubHead {
         font-size: .8rem;
         line-height: 2rem;
@@ -1414,7 +1414,7 @@ section#privacyPolicy {
         line-height: 2.5;
         margin-bottom: 0;
     }
-    
+
     .awardsSubHead {
         font-size: 1rem;
         line-height: 1;
@@ -1530,6 +1530,7 @@ section#privacyPolicy {
 hr {
     border-top: #1F3651 dashed 2px;
 }
+
 /* ----- SAMLL DESKTOP CV ----- */
 
 @media screen and (min-width: 900px) {
@@ -2056,7 +2057,7 @@ form div span {
 #submit:hover,
 #submit:focus,
 #reset:hover,
-#reset:focus  {
+#reset:focus {
     background-color: #34B776;
     color: #ffffff;
     border: #34B776 solid .1rem;
