@@ -1285,6 +1285,78 @@ section#privacyPolicy {
     }
 }
 
+
+/*------------------------------
+------- CLIENT LOGO FLIP --------
+------------------------------*/
+
+.clientLogos {
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.clientLogo {
+    width: 25%;
+    height: auto;
+    flex-grow: 1;
+    background-color: #FFFFFF;
+    background-repeat: no-repeat;
+    background-size: cover;
+    aspect-ratio: 1 / 1;
+    transition: 1.5s ease;
+}
+
+/*------ TABLET & DESKTOP CLIENT LOGOS ------*/
+
+@media screen and (min-width: 600px) {
+
+    .clientLogo {
+        width: 20%;
+    }
+}
+
+/* IMAGES DEFAULT - MONO*/
+.akzonobel {background-image: url("../images/Client_AKZO.jpg");}
+.kettle {background-image: url("../images/Client_KETTLE.jpg");}
+.danone {background-image: url("../images/Client_DANONE.jpg");}
+.youngs {background-image: url("../images/Client_YOU.jpg");}
+.accurist {background-image: url("../images/Client_ACC.jpg");}
+
+.agbarr {background-image: url("../images/Client_AGB.jpg");}
+.gardenoflife {background-image: url("../images/Client_GOL.jpg");}
+.froneri {background-image: url("../images/Client_FRON.jpg");}
+.gs {background-image: url("../images/Client_Gs.jpg");}
+.happyeggs {background-image: url("../images/Client_Happy_Eggs.jpg");}
+
+.autoglass {background-image: url("../images/Client_AGLASS.jpg");}
+.dulux {background-image: url("../images/Client_DULUX.jpg");}
+.mondelez {background-image: url("../images/Client_MOND.jpg");}
+.redtractor {background-image: url("../images/Client_RT.jpg");}
+.weetabix {background-image: url("../images/Client_WBX.jpg");}
+
+/* IMAGES ON HOVER - COLOUR */
+.akzonobel:hover {background-image: url("../images/Client_AKZO_Col.jpg");}
+.kettle:hover {background-image: url("../images/Client_KETTLE_Col.jpg");}
+.danone:hover {background-image: url("../images/Client_DANONE_Col.jpg");}
+.youngs:hover {background-image: url("../images/Client_YOU_Col.jpg");}
+.accurist:hover {background-image: url("../images/Client_ACC_Col.jpg");}
+
+.agbarr:hover {background-image: url("../images/Client_AGB_Col.jpg");}
+.gardenoflife:hover {background-image: url("../images/Client_GOL_Col.jpg");}
+.froneri:hover {background-image: url("../images/Client_FRON_Col.jpg");}
+.gs:hover {background-image: url("../images/Client_Gs_Col.jpg");}
+.happyeggs:hover {background-image: url("../images/Client_Happy_Eggs_Col.jpg");}
+
+.autoglass:hover {background-image: url("../images/Client_AGLASS_Col.jpg");}
+.dulux:hover {background-image: url("../images/Client_DULUX_Col.jpg");}
+.mondelez:hover {background-image: url("../images/Client_MOND_Col.jpg");}
+.redtractor:hover {background-image: url("../images/Client_RT_Col.jpg");}
+.weetabix:hover {background-image: url("../images/Client_WBX_Col.jpg");}
+
+
+
 /*------------------------------
 ----------- AWARDS ------------
 ------------------------------*/
