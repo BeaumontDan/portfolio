@@ -890,7 +890,6 @@ figure .feature_image {
     transition: all .6s linear;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
 }
 
 .carouselCaption {
@@ -912,25 +911,21 @@ figure .feature_image {
 .item2 {
     background-image: url("../../brand_portfolio/folio_images/accurist/accurist_header.jpg");
     background-position: bottom 10% right 12%;
-    background-attachment: fixed;
 }
 
 .item3 {
     background-image: url("../../brand_portfolio/folio_images/racingpoint/rp_header_2.jpg");
     background-position: bottom 40% right 27%;
-    background-attachment: fixed;
 }
 
 .item4 {
     background-image: url("../../brand_portfolio/folio_images/maxibon/maxibon_header.jpg");
     background-position: bottom 20% right 65%;
-    background-attachment: fixed;
 }
 
 .item5 {
     background-image: url("../../brand_portfolio/folio_images/nuii/nuii_hero_pack_editorial.jpg");
     background-position: bottom 80% right 25%;
-    background-attachment: fixed;
 }
 
 /*------------------------------
