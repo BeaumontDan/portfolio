@@ -95,7 +95,7 @@ button.animatedLink {
     font-family: inherit;
 
     &.circleArrow {
-        width: 16rem;
+        width: 12rem;
         height: auto;
 
         .circleIcon {
